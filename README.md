@@ -102,24 +102,37 @@ see `docs/MODEL_CARD.md` and `docs/CHECKPOINTS.md` (checkpoint→table/figure→
 
 ## 6. Quickstart
 
-```bash
-python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
+Recommended reviewer path: lightweight CPU-only reproduction from released results.
 
-# 1) smoke test (real integrity checks + a dry-run LIB forward)
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+
+python -m pip install --upgrade pip setuptools wheel
+python -m pip install --timeout 1000 --retries 20 -r requirements-minimal.txt
+
+# 1) smoke test
 bash scripts/smoke_test.sh
 
-# 2) regenerate main tables 1-5 from released results (no GPU, no retraining)
+# 2) regenerate main tables 1--5 from released results
 bash scripts/reproduce_main_tables.sh        # -> results/reproduced_tables/
 
-# 3) regenerate main figures 2-4 from released results
+# 3) regenerate main figures 2--4 from released results
 bash scripts/reproduce_figures.sh            # -> figures/reproduced/
 
 # 4) structural verification
 bash scripts/verify_artifact.sh              # -> verify_artifact_results.json
 ```
 
-`scripts/*.sh` use `python3` by default; override with `PYTHON=/path/to/python`.
+Optional full reproduction dependencies:
+
+```bash
+python -m pip install --timeout 1000 --retries 20 -r requirements.txt
+```
+
+The full dependency file may download larger encoder/tooling packages. For the standard reviewer check, use `requirements-minimal.txt` first.
+
+scripts/*.sh use python3 by default; override with `PYTHON=/path/to/python`.
 
 ## 7. Reproduce main tables / figures / smoke test
 
