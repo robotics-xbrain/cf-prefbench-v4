@@ -1,3 +1,38 @@
+# Reviewer quickstart (recommended)
+
+For lightweight CPU-only artifact checks, reviewers should use the minimal dependency file first. This path verifies the artifact, runs a smoke test, and regenerates the main-paper tables and figures from released results. It does not require GPU training or large feature caches.
+
+Commands:
+
+    python3 -m venv .venv
+    source .venv/bin/activate
+    python -m pip install --upgrade pip setuptools wheel
+    python -m pip install --timeout 1000 --retries 20 -r requirements-minimal.txt
+
+    bash scripts/smoke_test.sh
+    bash scripts/reproduce_main_tables.sh
+    bash scripts/reproduce_figures.sh
+    bash scripts/verify_artifact.sh
+
+Expected outputs:
+
+    results/reproduced_tables/
+    figures/reproduced/
+    smoke_test_results.json
+    verify_artifact_results.json
+
+If all checks pass, scripts/verify_artifact.sh reports:
+
+    OVERALL: PASS
+
+Optional full reproduction dependencies:
+
+    python -m pip install --timeout 1000 --retries 20 -r requirements.txt
+
+The full requirements.txt may download larger encoder/tooling packages. Use requirements-minimal.txt first for the standard review check.
+
+---
+
 # CF-PrefBench v4 + LIB v0 — Anonymous Artifact
 
 **Anonymous artifact** for the paper *"When Paraphrases Break Binding: A Lexical
