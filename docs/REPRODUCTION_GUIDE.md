@@ -86,3 +86,25 @@ PYTHON=python3 bash scripts/smoke_test.sh        # -> smoke_test_results.json
 PYTHON=python3 bash scripts/verify_artifact.sh   # -> verify_artifact_results.json
 diff <(python scripts/artifact/reproduce_main_tables.py) /dev/null  # writes reproduced tables
 ```
+
+## Reviewer quick install note
+
+For fast CPU-only artifact checks, reviewers can use the lightweight dependency file first:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip setuptools wheel
+python -m pip install --timeout 1000 --retries 20 -r requirements-minimal.txt
+```
+
+Then run:
+
+```bash
+bash scripts/smoke_test.sh
+bash scripts/reproduce_main_tables.sh
+bash scripts/reproduce_figures.sh
+bash scripts/verify_artifact.sh
+```
+
+The full `requirements.txt` is for optional/full reproduction paths and may download larger encoder/tooling packages. If dependency downloads timeout, retry with a longer timeout or install a CPU/GPU-specific PyTorch wheel first.
