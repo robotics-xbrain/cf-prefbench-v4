@@ -1,0 +1,178 @@
+{
+  "model": "gpt-4o-2024-11-20",
+  "per_split": {
+    "test_heldout_lexical": {
+      "accuracy": 0.52,
+      "n": 75,
+      "per_verb": {
+        "convey": {
+          "acc": 0.5,
+          "n": 26
+        },
+        "shift": {
+          "acc": 0.5769230769230769,
+          "n": 26
+        },
+        "transit": {
+          "acc": 0.4782608695652174,
+          "n": 23
+        }
+      }
+    },
+    "test_heldout_lexical_scoot": {
+      "accuracy": 0.6,
+      "n": 25,
+      "per_verb": {
+        "scoot": {
+          "acc": 0.6,
+          "n": 25
+        }
+      }
+    },
+    "test_heldout_size_colossal": {
+      "accuracy": 0.8947368421052632,
+      "n": 38,
+      "per_verb": {
+        "fetch": {
+          "acc": 0.9230769230769231,
+          "n": 13
+        },
+        "retrieve": {
+          "acc": 0.9090909090909091,
+          "n": 11
+        },
+        "secure": {
+          "acc": 0.8571428571428571,
+          "n": 14
+        }
+      }
+    },
+    "test_heldout_size_gigantic": {
+      "accuracy": 0.8888888888888888,
+      "n": 36,
+      "per_verb": {
+        "fetch": {
+          "acc": 0.9166666666666666,
+          "n": 12
+        },
+        "retrieve": {
+          "acc": 0.9090909090909091,
+          "n": 11
+        },
+        "secure": {
+          "acc": 0.8461538461538461,
+          "n": 13
+        }
+      }
+    },
+    "test_heldout_size_miniature": {
+      "accuracy": 0.7857142857142857,
+      "n": 42,
+      "per_verb": {
+        "fetch": {
+          "acc": 0.7857142857142857,
+          "n": 14
+        },
+        "retrieve": {
+          "acc": 0.7857142857142857,
+          "n": 14
+        },
+        "secure": {
+          "acc": 0.7857142857142857,
+          "n": 14
+        }
+      }
+    },
+    "test_heldout_size_petite": {
+      "accuracy": 0.8292682926829268,
+      "n": 41,
+      "per_verb": {
+        "fetch": {
+          "acc": 0.8571428571428571,
+          "n": 14
+        },
+        "retrieve": {
+          "acc": 0.8461538461538461,
+          "n": 13
+        },
+        "secure": {
+          "acc": 0.7857142857142857,
+          "n": 14
+        }
+      }
+    },
+    "test_heldout_speed_briskly": {
+      "accuracy": 0.6428571428571429,
+      "n": 42,
+      "per_verb": {
+        "advance": {
+          "acc": 0.5,
+          "n": 14
+        },
+        "shift": {
+          "acc": 0.7142857142857143,
+          "n": 14
+        },
+        "translate": {
+          "acc": 0.7142857142857143,
+          "n": 14
+        }
+      }
+    },
+    "test_heldout_speed_gradually": {
+      "accuracy": 0.5714285714285714,
+      "n": 42,
+      "per_verb": {
+        "advance": {
+          "acc": 0.5714285714285714,
+          "n": 14
+        },
+        "shift": {
+          "acc": 0.7142857142857143,
+          "n": 14
+        },
+        "translate": {
+          "acc": 0.42857142857142855,
+          "n": 14
+        }
+      }
+    },
+    "test_heldout_speed_sluggishly": {
+      "accuracy": 0.5238095238095238,
+      "n": 42,
+      "per_verb": {
+        "advance": {
+          "acc": 0.5,
+          "n": 14
+        },
+        "shift": {
+          "acc": 0.5,
+          "n": 14
+        },
+        "translate": {
+          "acc": 0.5714285714285714,
+          "n": 14
+        }
+      }
+    },
+    "test_heldout_speed_speedily": {
+      "accuracy": 0.7142857142857143,
+      "n": 42,
+      "per_verb": {
+        "advance": {
+          "acc": 0.7142857142857143,
+          "n": 14
+        },
+        "shift": {
+          "acc": 0.7142857142857143,
+          "n": 14
+        },
+        "translate": {
+          "acc": 0.7142857142857143,
+          "n": 14
+        }
+      }
+    }
+  },
+  "total_cost_usd": 1.2099500000000014
+}

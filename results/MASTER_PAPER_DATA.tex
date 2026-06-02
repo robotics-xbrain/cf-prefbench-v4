@@ -1,0 +1,662 @@
+% =====================================================================
+% MASTER_PAPER_DATA.tex
+% =====================================================================
+% Single source of truth for all Phase 5 numbers, tables, and figure
+% paths used by the EMNLP paper. Generated 2026-05-19 from committed
+% artifacts in outputs/phase5/. Every value below is traced to a
+% specific source file; do NOT modify values without updating the
+% source comment too.
+%
+% USAGE: \input{outputs/phase5/MASTER_PAPER_DATA.tex} into the LaTeX
+% preamble. Macros are namespaced (\cf*, \cliff*, \san*) to avoid
+% clashes with the old paper's commands.
+%
+% Anti-fabrication rules:
+%   - All numbers traced to commit-history files (see source line
+%     above each macro / table).
+%   - Decimals reported with the precision they appear in the source
+%     (no rounding up, no extra trailing zeros).
+%   - If a number is uncertain or unconfirmed, marked "TBD" with the
+%     source it would come from.
+% =====================================================================
+
+
+% =====================================================================
+% SECTION A: BENCHMARK STATISTICS (for paper Section 3)
+% Sources:
+%   - outputs/phase5/section3_paper/section3_method.md (Table 3.1, 3.2)
+%   - .aris/checkpoint_phase5_section3_draft.md (verified totals)
+% =====================================================================
+
+\newcommand{\cfaxes}{7}                % 7 binding axes
+\newcommand{\cfaxeslist}{color, object, action, spatial, size, motion\_sequence, speed}
+\newcommand{\cfdiagaxis}{impossible\_premise}    % 8th diagnostic split
+\newcommand{\cfexamples}{7{,}749}      % total preference rows (incl. impossible_premise)
+\newcommand{\cfvideos}{2{,}646}        % unique 24-frame videos
+\newcommand{\cfframes}{24}             % frames per video
+\newcommand{\cfres}{192$\times$144}    % video resolution
+\newcommand{\cfframessampled}{8}       % K=8 frames sampled at train/eval time
+\newcommand{\cfseeds}{1, 2, 3}         % random seeds (NOT 42/1337/2024)
+\newcommand{\cfseedcount}{3}
+\newcommand{\cfepochs}{60}
+\newcommand{\cfbatchbthirtytwo}{32}    % B/32 batch
+\newcommand{\cfbatchlfourteen}{16}     % L/14 batch (memory-constrained)
+\newcommand{\cfattrqueries}{4}         % n_attr
+\newcommand{\cfattrdim}{128}           % d_attr
+\newcommand{\cflrlib}{1\mathrm{e}{-4}}
+\newcommand{\cflrhead}{5\mathrm{e}{-4}}
+\newcommand{\cfwd}{1\mathrm{e}{-4}}
+\newcommand{\cflossbce}{1.0}           % preference BCE
+\newcommand{\cflossrecon}{0.1}         % reconstruction CE
+\newcommand{\cflossctf}{0.05}          % counterfactual margin
+\newcommand{\cflossstab}{0.02}         % paraphrase stability
+\newcommand{\cfparamsbthirtytwo}{$\sim$0.6M}   % LIB v0 trainable params on B/32
+\newcommand{\cfparamslfourteen}{$\sim$0.9M}    % LIB v0 trainable params on L/14
+\newcommand{\cfclipparamsbthirtytwo}{$\sim$87M}    % frozen CLIP B/32 visual
+\newcommand{\cfclipparamslfourteen}{$\sim$305M}    % frozen CLIP L/14 visual
+\newcommand{\cfpatchesbthirtytwo}{49}      % P for B/32
+\newcommand{\cfpatcheslfourteen}{256}      % P for L/14
+\newcommand{\cfdimbthirtytwo}{768}         % B/32 visual dim
+\newcommand{\cfdimlfourteen}{1024}         % L/14 visual dim
+
+% --- Table A.1: v4 split sizes (Table 3.1 in Section 3) ---
+% Source: outputs/phase5/section3_paper/section3_method.md (lines 33-49)
+\newcommand{\tabvfoursplits}{%
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+ & train & val & test\_seen & lex & cam & color & spatial & hard & total \\
+\midrule
+color           & 528 & 84 & 72 & 84 & 72 & 84 & 84 & 72 & 1080 \\
+object          & 528 & 84 & 72 & 84 & 72 & 84 & 84 & 72 & 1080 \\
+action          & 528 & 84 & 72 & 84 & 72 & 84 & 84 & 72 & 1080 \\
+spatial         & 528 & 84 & 72 & 84 & 72 & 84 & 84 & 72 & 1080 \\
+size            & 528 & 84 & 72 & 84 & 72 & 84 & 84 & 72 & 1080 \\
+motion\_seq.    & 528 & 84 & 72 & 84 & 72 & 84 & 84 & 72 & 1080 \\
+speed           & 528 & 84 & 72 & 84 & 72 & 84 & 84 & 72 & 1080 \\
+imposs.\_prem.  & 0   & 27 & 27 & 27 & 27 & 27 & 27 & 27 & 189 \\
+\midrule
+total           & 3{,}696 & 615 & 531 & 615 & 531 & 615 & 615 & 531 & 7{,}749 \\
+\bottomrule
+\end{tabular}
+\caption{CF-PrefBench v4 split sizes by axis.}
+\label{tab:v4-splits}
+\end{table}%
+}
+
+% --- Table A.2: paraphrase pools (Table 3.2 in Section 3) ---
+% Source: outputs/phase5/section3_paper/section3_method.md (lines 55-73)
+\newcommand{\tabparaphrasepools}{%
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lll}
+\toprule
+Axis & Training paraphrases & Held-out paraphrases \\
+\midrule
+color        & activate, press, touch        & engage, tap, trigger \\
+object       & bring, move, place            & carry, deliver, transport \\
+action       & close, move, open, pull, push & extract, operate, retract, slide \\
+spatial      & move, place, put              & drift, shift, transfer \\
+size         & grasp, lift, pick             & fetch, retrieve, secure \\
+motion\_seq. & drag, move, push              & convey, shift, transit (+ scoot, Exp 3) \\
+speed        & carry, move, transport        & advance, shift, translate \\
+\bottomrule
+\end{tabular}
+\caption{Train and held-out paraphrase pools.}
+\label{tab:paraphrase-pools}
+\end{table}%
+}
+
+
+% =====================================================================
+% SECTION B: LEXICAL CLIFF NUMBERS (for paper Section 4.2)
+% Sources:
+%   - outputs/phase5/exp3_aggregate/cliff_data_B32.json
+%   - outputs/phase5/section4_paper/section4_findings_v2.md (Table 4.1)
+% =====================================================================
+
+% --- Pearson / Spearman correlation (motion verbs, B/32) ---
+\newcommand{\cliffpearsonr}{0.808}           % Pearson r  (cliff_data_B32.json: 0.8081)
+\newcommand{\cliffpearsonp}{0.0015}          % Pearson p  (cliff_data_B32.json: 0.00147)
+\newcommand{\cliffspearmanrho}{0.880}        % Spearman rho (cliff_data_B32.json: 0.8798)
+\newcommand{\cliffspearmanp}{0.00016}        % Spearman p  (cliff_data_B32.json: 0.000161)
+\newcommand{\cliffnobs}{12}                  % n = 4 verbs x 3 seeds
+
+% --- Per-verb cosine + accuracy (B/32) ---
+% transit
+\newcommand{\transitcosB}{0.915}             % B/32 cos (cliff_data_B32.json: 0.9153)
+\newcommand{\transitaccB}{0.500}             % mean over 3 seeds
+\newcommand{\transitstdB}{0.000}
+% scoot
+\newcommand{\scootcosB}{0.927}               % B/32 cos (cliff_data_B32.json: 0.9266)
+\newcommand{\scootaccB}{0.679}               % mean over 3 seeds
+\newcommand{\scootstdB}{0.058}
+% convey
+\newcommand{\conveycosB}{0.938}              % B/32 cos (cliff_data_B32.json: 0.9378)
+\newcommand{\conveyaccB}{0.929}              % mean over 3 seeds
+\newcommand{\conveystdB}{0.000}
+% shift
+\newcommand{\shiftcosB}{0.968}               % B/32 cos (cliff_data_B32.json: 0.9681)
+\newcommand{\shiftaccB}{0.917}               % mean over 3 seeds
+\newcommand{\shiftstdB}{0.017}
+
+% --- Substitution recovery (motion B/32) ---
+% Source: outputs/phase5/exp3_aggregate/cliff_data_B32.json (substitution_recovery_motion_sequence)
+\newcommand{\transitsubB}{0.893}     % transit substitution -> train-verb text
+\newcommand{\transitsubdeltaB}{0.393}
+\newcommand{\scootsubB}{0.917}
+\newcommand{\scootsubdeltaB}{0.238}
+\newcommand{\conveysubB}{0.929}
+\newcommand{\conveysubdeltaB}{0.000}
+\newcommand{\shiftsubB}{0.929}
+\newcommand{\shiftsubdeltaB}{0.012}
+
+% --- Cliff transition zone (B/32) ---
+% Source: outputs/phase5/section6_paper/section6_discussion.md (Sec 6.1)
+\newcommand{\cliffzonelo}{0.92}              % below: fails
+\newcommand{\cliffzonehi}{0.94}              % above: succeeds
+\newcommand{\cliffzonerange}{0.87--0.97}     % full B/32 cliff zone (Section 3.2)
+
+% --- Table B.1: B/32 motion-verb cliff (Table 4.1 in Section 4.2) ---
+% Source: outputs/phase5/section4_paper/section4_findings_v2.md (lines 14-30)
+\newcommand{\tabmotioncliff}{%
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrr}
+\toprule
+Verb & cos(B/32) & Accuracy (3-seed) \\
+\midrule
+shift   & 0.968 & 0.917 $\pm$ 0.017 \\
+convey  & 0.938 & 0.929 $\pm$ 0.000 \\
+scoot   & 0.927 & 0.679 $\pm$ 0.058 \\
+transit & 0.915 & 0.500 $\pm$ 0.000 \\
+\bottomrule
+\end{tabular}
+\caption{ViT-B/32 motion-verb cliff. Pearson $r=0.808$ ($p=0.0015$),
+Spearman $\rho=0.880$ ($p=0.00016$) over $n=12$ verb-seed
+observations.}
+\label{tab:motion-cliff}
+\end{table}%
+}
+
+
+% =====================================================================
+% SECTION C: VIT-L/14 RESULTS (for paper Section 4.3)
+% Sources:
+%   - outputs/phase5/exp3b_vitL14/L14_cliff_table.json
+%   - outputs/phase5/section4_paper/section4_findings_v2.md (Table 4.2)
+% =====================================================================
+
+% --- Per-verb L/14 cos + accuracy ---
+\newcommand{\transitcosL}{0.876}     % L/14 cos (L14_cliff_table.json: 0.8761)
+\newcommand{\transitaccL}{0.917}     % L/14 mean (L14_cliff_table.json: 0.9167)
+\newcommand{\transitdeltaBL}{+0.417} % L14 - B32 (L14_cliff_table.json: 0.4167)
+
+\newcommand{\scootcosL}{0.875}       % L/14 cos (L14_cliff_table.json: 0.8746)
+\newcommand{\scootaccL}{0.905}       % L/14 mean (L14_cliff_table.json: 0.9048)
+\newcommand{\scootdeltaBL}{+0.226}   % (L14_cliff_table.json: 0.2258)
+
+\newcommand{\conveycosL}{0.918}      % L/14 cos
+\newcommand{\conveyaccL}{0.929}      % L/14 mean
+\newcommand{\conveydeltaBL}{$\pm 0.000$}
+
+\newcommand{\shiftcosL}{0.925}       % L/14 cos (L14_cliff_table.json: 0.9254)
+\newcommand{\shiftaccL}{0.905}       % L/14 mean
+\newcommand{\shiftdeltaBL}{-0.012}   % (L14_cliff_table.json: -0.0122)
+
+% --- Table C.1: B/32 vs L/14 motion cliff (Table 4.2 in Section 4.3) ---
+% Source: outputs/phase5/section4_paper/section4_findings_v2.md (lines 45-60)
+\newcommand{\tabmotionlfourteen}{%
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+Verb & cos(B/32) & B/32 & cos(L/14) & L/14 & $\Delta$ \\
+\midrule
+shift   & 0.968 & 0.917 & 0.925 & 0.905 & $-0.012$ \\
+convey  & 0.938 & 0.929 & 0.918 & 0.929 & $\pm 0.000$ \\
+scoot   & 0.927 & 0.679 & 0.875 & 0.905 & $+0.226$ \\
+transit & 0.915 & 0.500 & 0.876 & 0.917 & $+0.417$ \\
+\bottomrule
+\end{tabular}
+\caption{Motion-verb cliff under two backbones.}
+\label{tab:motion-l14}
+\end{table}%
+}
+
+
+% =====================================================================
+% SECTION D: AXIS GENERALIZATION (for paper Section 4.4)
+% Sources:
+%   - outputs/phase5/exp4_axis_gen/cliff_table.json
+%   - outputs/phase5/section4_paper/section4_findings_v2.md (Table 4.3)
+% =====================================================================
+
+% --- Per-class 3-axis x 2-arch means ---
+% Source for raw: cliff_table.json (per-token b32_mean / l14_mean)
+
+% Size BIG: colossal (0.921), gigantic (0.929) -> mean 0.925
+\newcommand{\sizebigB}{0.925}        % $\pm$ 0.009 (cross-class std)
+\newcommand{\sizebigBstd}{0.009}
+\newcommand{\sizebigL}{0.810}        % colossal 0.8095, gigantic 0.8095 -> 0.810
+\newcommand{\sizebigLstd}{0.067}     % from section4_findings_v2.md (line 83)
+\newcommand{\sizebigDelta}{-0.115}
+
+% Size SMALL: miniature (0.397), petite (0.492) -> mean 0.444
+\newcommand{\sizesmallB}{0.444}
+\newcommand{\sizesmallBstd}{0.103}
+\newcommand{\sizesmallL}{0.794}      % miniature 0.817, petite 0.770 -> 0.794
+\newcommand{\sizesmallLstd}{0.095}
+\newcommand{\sizesmallDelta}{+0.350}
+
+% Speed FAST: briskly (0.048), speedily (0.183) -> mean 0.115
+\newcommand{\speedfastB}{0.115}
+\newcommand{\speedfastBstd}{0.084}
+\newcommand{\speedfastL}{0.389}      % briskly 0.317, speedily 0.460 -> 0.389
+\newcommand{\speedfastLstd}{0.179}
+\newcommand{\speedfastDelta}{+0.273}
+
+% Speed SLOW: sluggishly (0.960), gradually (0.698) -> mean 0.829
+\newcommand{\speedslowB}{0.829}
+\newcommand{\speedslowBstd}{0.134}
+\newcommand{\speedslowL}{0.996}      % sluggishly 0.992, gradually 1.000 -> 0.996
+\newcommand{\speedslowLstd}{0.009}
+\newcommand{\speedslowDelta}{+0.167}
+
+% Motion above-cliff: shift+convey -> mean
+\newcommand{\motionaboveB}{0.923}    % section4_findings_v2.md line 89
+\newcommand{\motionaboveBstd}{0.009}
+\newcommand{\motionaboveL}{0.917}
+\newcommand{\motionaboveLstd}{0.017}
+\newcommand{\motionaboveDelta}{-0.006}
+
+% Motion below-cliff: scoot+transit -> mean
+\newcommand{\motionbelowB}{0.589}    % section4_findings_v2.md line 90
+\newcommand{\motionbelowBstd}{0.107}
+\newcommand{\motionbelowL}{0.911}
+\newcommand{\motionbelowLstd}{0.014}
+\newcommand{\motionbelowDelta}{+0.322}
+
+% Pearson r on the full 24-row (cliff_table.json: correlation_B32)
+\newcommand{\cliffallpearsonrB}{-0.503}       % cliff_table.json: -0.5026
+\newcommand{\cliffallpearsonpB}{0.012}        % cliff_table.json: 0.0123
+\newcommand{\cliffallnobs}{24}                % 8 tokens x 3 seeds
+\newcommand{\cliffallpearsonrL}{-0.283}       % cliff_table.json: -0.2830
+\newcommand{\cliffallpearsonpL}{0.180}
+
+% --- Table D.1: 3-axis x 2-arch cliff (Table 4.3 in Section 4.4) ---
+% Source: outputs/phase5/section4_paper/section4_findings_v2.md (lines 76-95)
+\newcommand{\tabthreeaxiscliff}{%
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{llrrr}
+\toprule
+Axis & Class & B/32 & L/14 & $\Delta$ \\
+\midrule
+\multirow{2}{*}{Size}
+  & BIG          & 0.925 $\pm$ 0.009 & 0.810 $\pm$ 0.067 & $-0.115$ \\
+  & SMALL        & \textbf{0.444} $\pm$ 0.103 & 0.794 $\pm$ 0.095 & $+0.350$ \\
+\multirow{2}{*}{Speed}
+  & FAST         & \textbf{0.115} $\pm$ 0.084 & 0.389 $\pm$ 0.179 & $+0.273$ \\
+  & SLOW         & 0.829 $\pm$ 0.134 & 0.996 $\pm$ 0.009 & $+0.167$ \\
+\multirow{2}{*}{Motion}
+  & above-cliff  & 0.923 $\pm$ 0.009 & 0.917 $\pm$ 0.017 & $-0.006$ \\
+  & below-cliff  & \textbf{0.589} $\pm$ 0.107 & 0.911 $\pm$ 0.014 & $+0.322$ \\
+\bottomrule
+\end{tabular}
+\caption{Three-axis $\times$ two-architecture cliff matrix.
+\textbf{Bold} = cliff cells under B/32. L/14 fully closes the cliff on
+motion and size; on speed only the SLOW class reaches ceiling, FAST
+remains depressed. $n=6$ per cell.}
+\label{tab:3axis-cliff}
+\end{table}%
+}
+
+
+% =====================================================================
+% SECTION E: CROSS-METHOD COMPARISON (for paper Section 4.4 / Fig 4.5)
+% Sources:
+%   - outputs/phase5/exp5_vlm/gpt4o/MOTION_CLIFF.json
+%   - outputs/phase5/exp5_vlm/qwen/MOTION_CLIFF.json
+% =====================================================================
+
+% --- GPT-4o per-token accuracy (model: gpt-4o-2024-11-20) ---
+\newcommand{\gptfoconvey}{0.500}            % MOTION_CLIFF.json: 0.5000
+\newcommand{\gptfoshift}{0.577}             % MOTION_CLIFF.json: 0.5769
+\newcommand{\gptfoscoot}{0.600}             % MOTION_CLIFF.json: 0.6000
+\newcommand{\gptfotransit}{0.478}           % MOTION_CLIFF.json: 0.4783
+\newcommand{\gptfocolossal}{0.895}          % MOTION_CLIFF.json: 0.8947
+\newcommand{\gptfogigantic}{0.889}          % MOTION_CLIFF.json: 0.8889
+\newcommand{\gptfominiature}{0.786}         % MOTION_CLIFF.json: 0.7857
+\newcommand{\gptfopetite}{0.829}            % MOTION_CLIFF.json: 0.8293
+\newcommand{\gptfobriskly}{0.643}           % MOTION_CLIFF.json: 0.6429
+\newcommand{\gptfospeedily}{0.714}          % MOTION_CLIFF.json: 0.7143
+\newcommand{\gptfogradually}{0.571}         % MOTION_CLIFF.json: 0.5714
+\newcommand{\gptfosluggishly}{0.524}        % MOTION_CLIFF.json: 0.5238
+% Motion-axis mean for GPT-4o (Sec 6.2): 0.539
+\newcommand{\gptfomotionmean}{0.539}        % section6_discussion.md line 13
+
+% --- Qwen2-VL-2B per-token accuracy ---
+\newcommand{\qwenconvey}{0.458}
+\newcommand{\qwenshift}{0.556}
+\newcommand{\qwenscoot}{0.333}
+\newcommand{\qwentransit}{0.556}
+\newcommand{\qwencolossal}{0.439}
+\newcommand{\qwengigantic}{0.450}
+\newcommand{\qwenminiature}{0.538}
+\newcommand{\qwenpetite}{0.513}
+\newcommand{\qwenbriskly}{0.355}
+\newcommand{\qwenspeedily}{0.537}
+\newcommand{\qwengradually}{0.429}
+\newcommand{\qwensluggishly}{0.484}
+\newcommand{\qwenmotionmean}{0.498}         % SANITY_MATRIX.md line 64
+
+% --- Cross-method Delta highlight numbers (Section 4.4 / 6.2) ---
+% GPT-4o over LIB-B/32 on cliff tokens:
+%   miniature: 0.786 - 0.397 = +0.389
+%   petite:    0.829 - 0.492 = +0.337
+%   briskly:   0.643 - 0.048 = +0.595
+%   speedily:  0.714 - 0.183 = +0.531
+\newcommand{\gptliftminrange}{$+0.337$ to $+0.595$}     % section4_findings_v2.md line 101
+\newcommand{\gptliftspeedfast}{0.64}        % >=0.64 floor for speed FAST
+\newcommand{\gptliftsizesmall}{0.78}        % >=0.78 floor for size SMALL
+
+% --- Table E.1: cross-method comparison (12 tokens x 4 methods) ---
+% Source: outputs/phase5/exp5_vlm/{gpt4o,qwen}/MOTION_CLIFF.json (raw rows)
+%         outputs/phase5/exp4_axis_gen/cliff_table.json (LIB columns)
+\newcommand{\tabcrossmethod}{%
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{llrrrrr}
+\toprule
+Axis & Token & cos(B/32) & LIB-B/32 & LIB-L/14 & GPT-4o & Qwen-2B \\
+\midrule
+\multirow{4}{*}{Motion}
+ & shift     & 0.968 & 0.917 & 0.905 & 0.577 & 0.556 \\
+ & convey    & 0.938 & 0.929 & 0.929 & 0.500 & 0.458 \\
+ & scoot     & 0.927 & 0.679 & 0.905 & 0.600 & 0.333 \\
+ & transit   & 0.915 & 0.500 & 0.917 & 0.478 & 0.556 \\
+\midrule
+\multirow{4}{*}{Size}
+ & colossal  & 0.898 & 0.921 & 0.810 & 0.895 & 0.439 \\
+ & gigantic  & 0.918 & 0.929 & 0.810 & 0.889 & 0.450 \\
+ & miniature & 0.918 & 0.397 & 0.817 & 0.786 & 0.538 \\
+ & petite    & 0.917 & 0.492 & 0.770 & 0.829 & 0.513 \\
+\midrule
+\multirow{4}{*}{Speed}
+ & sluggishly & 0.932 & 0.960 & 0.992 & 0.524 & 0.484 \\
+ & gradually  & 0.938 & 0.698 & 1.000 & 0.571 & 0.429 \\
+ & briskly    & 0.937 & 0.048 & 0.317 & 0.643 & 0.355 \\
+ & speedily   & 0.942 & 0.183 & 0.460 & 0.714 & 0.537 \\
+\bottomrule
+\end{tabular}
+\caption{Cross-method held-out accuracy on 12 cliff-zone tokens.
+LIB columns: 3-seed means from \texttt{cliff\_table.json};
+GPT-4o (gpt-4o-2024-11-20) and Qwen2-VL-2B columns are single
+zero-shot passes at temperature 0. No single method dominates: LIB-L/14
+leads on motion cliff tokens (scoot, transit), GPT-4o leads on speed
+FAST (briskly, speedily) and ties LIB-B/32 on size BIG, and the two
+trade narrowly on size SMALL.}
+\label{tab:cross-method}
+\end{table*}%
+}
+
+% --- Figure 4.5 caption text ---
+% Source: outputs/phase5/section4_paper/section4_findings_v2.md (lines 103-108)
+\newcommand{\figcrossmethodcaption}{Cross-method comparison of
+held-out accuracy across the three binding axes. Each panel shows
+four held-out tokens (two above-cliff for LIB-B/32, two cliff tokens)
+and four methods: LIB-B/32 (blue, hatched on cliff tokens), LIB-L/14
+(orange), zero-shot GPT-4o (green), and zero-shot Qwen2-VL-2B
+(purple). Red stars mark the best-performing method on each cliff
+token. No single method dominates: LIB-L/14 leads on motion cliff
+tokens, GPT-4o leads on speed FAST cliff tokens, and the two trade
+narrowly on size SMALL. Qwen-2B sits near chance throughout
+(minimum-capability floor).}
+
+
+% =====================================================================
+% SECTION F: SANITY BATTERY (for paper Section 5)
+% Sources:
+%   - outputs/phase5/section4_paper/section5_sanity.md
+%   - outputs/phase5/exp6_cross_sanity/SANITY_MATRIX.md
+%   - outputs/phase4/sanity/sanity_summary.json (Phase 3 hybrid)
+%   - outputs/phase5/exp2_motion_verify/sc6/sanity_v4_seed1.json (LIB sc6)
+%   - outputs/phase5/exp6_cross_sanity/{gpt4o,qwen}/sc6_summary_*.json
+% =====================================================================
+
+% --- The Phase 3 hybrid "false positive" headline number ---
+\newcommand{\phasethreenormal}{0.905}    % $\pm$ 0.034 v3 test_heldout_color
+\newcommand{\phasethreenormalstd}{0.034}
+\newcommand{\phasethreenflipgroups}{14}  % $n=14$ flip groups, seed 42
+% Sanity battery on Phase 3 hybrid (color-axis PFA):
+\newcommand{\santhreeNORMAL}{0.929}
+\newcommand{\santhreeSCone}{0.143}       % SC-1 force gate=1 (LIB-only collapse)
+\newcommand{\santhreeSCtwo}{0.929}       % SC-2 force gate=0 (centroid-only matches NORMAL)
+\newcommand{\santhreeSCthree}{0.923}     % SC-3 random gate
+\newcommand{\santhreeSCfour}{0.167}      % SC-4 zero centroid (centroid carries 100%)
+\newcommand{\santhreeSCfive}{0.929}      % SC-5 zero LIB (LIB unused)
+\newcommand{\santhreeSCsix}{0.929}       % SC-6 shuffle text (text unused, with caveat)
+\newcommand{\sanlibonlyhypothetical}{0.643}  % what an honest LIB-only would score
+
+% --- LIB v0 (pure path) sanity probe matrix (motion axis) ---
+% Source: outputs/phase5/section4_paper/section5_sanity.md Table 5.2 (lines 66-79)
+\newcommand{\sanlibBNORMAL}{0.750}       % seed-1 retrain; 3-seed mean is 0.786 in Sec 4.2
+\newcommand{\sanlibLNORMAL}{0.917}
+\newcommand{\sanlibBSCsixZERO}{0.500}
+\newcommand{\sanlibLSCsixZERO}{0.500}
+\newcommand{\sanlibBSCsixSHUFFLE}{0.452}
+\newcommand{\sanlibBSUB}{0.893}          % substitution recovery
+\newcommand{\sanlibLSUB}{0.917}          % uninformative (no failure to recover from)
+
+% --- Anti-collapse 4-variant falsification (Section 5.5) ---
+% Targets: NORMAL >= 0.75, SC-5 drop >= 0.15, SC-6 drop >= 0.10
+\newcommand{\anticolltargetnormal}{0.75}
+\newcommand{\anticolltargetscfivedrop}{0.15}
+\newcommand{\anticolltargetscsixdrop}{0.10}
+% B1 bottleneck
+\newcommand{\bonenormal}{0.286}
+\newcommand{\bonescfivedrop}{$-0.571$}   % LIB hurts
+\newcommand{\bonescsixdrop}{$+0.071$}
+% B2 frozen residual
+\newcommand{\btwonormal}{0.357}
+\newcommand{\btwoscfivedrop}{n/a}        % residual is detached
+\newcommand{\btwoscsixdrop}{$+0.357$}
+% B3 MI penalty
+\newcommand{\bthreenormal}{0.857}
+\newcommand{\bthreescfivedrop}{$-0.071$}
+\newcommand{\bthreescsixdrop}{$+0.087$}
+% B4 adv lambda=0.3
+\newcommand{\bfourpthreeennormal}{0.786}
+\newcommand{\bfourpthreescfivedrop}{$+0.071$}
+\newcommand{\bfourpthreescsixdrop}{$+0.286$}
+% B4 adv lambda=0.5
+\newcommand{\bfourpfiveennormal}{0.857}
+\newcommand{\bfourpfivescfivedrop}{$0.000$}
+\newcommand{\bfourpfivescsixdrop}{$0.000$}
+
+% --- Cross-baseline sanity matrix (Exp 6) ---
+% Source: outputs/phase5/exp6_cross_sanity/SANITY_MATRIX.md
+\newcommand{\gptfoscsixn}{95}            % valid A/B responses out of 112 shuffled
+\newcommand{\gptfomotionscsix}{0.516}    % SC-6 shuffled, near-chance
+\newcommand{\qwenscsixn}{62}
+\newcommand{\qwenmotionscsix}{0.597}     % SC-6 shuffled (small-n noise; caveated)
+
+% --- Table F.1: six sanity probes (Table 5.1) ---
+% Source: outputs/phase5/section4_paper/section5_sanity.md (lines 15-32)
+\newcommand{\tabsanityprobes}{%
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lll}
+\toprule
+Probe & Perturbation & What it tests \\
+\midrule
+SC-1 & Force gate $=1$ (LIB-only)        & Pure-learned-path acc.\ \\
+SC-2 & Force gate $=0$ (centroid-only)   & Pure-engineered-path acc.\ \\
+SC-3 & Random gate per call              & Gate's functional relevance \\
+SC-4 & Zero engineered centroid feature  & Reliance on engineered signal \\
+SC-5 & Zero learned (LIB) feature        & Reliance on learned signal \\
+SC-6 & Shuffle CLIP text within batch    & Instruction usage \\
+\bottomrule
+\end{tabular}
+\caption{The six sanity probes. SC-1..SC-3 are gate-specific;
+SC-4..SC-6 apply to any model with separable pathways and an
+instruction input.}
+\label{tab:sanity-probes}
+\end{table}%
+}
+
+% --- Table F.2: Phase 3 hybrid sanity audit (Table 5.2) ---
+\newcommand{\tabphasethreesanity}{%
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lrll}
+\toprule
+Probe & PFA & Expected (honest hybrid) & Verdict \\
+\midrule
+NORMAL          & 0.929 & --- & matches paper claim \\
+SC-1 gate=1     & 0.143 & $\sim$0.57--0.64 (LIB-only) & \textbf{FAIL} (well below) \\
+SC-2 gate=0     & 0.929 & $\sim$0.929 (centroid-only) & PASS \\
+SC-3 random gate& 0.923 & in $[0.64, 0.93]$ & at top of range \\
+SC-4 zero centr.& 0.167 & $\ll$ NORMAL if centroid contributes & \textbf{centroid carries 100\%} \\
+SC-5 zero LIB   & 0.929 & $\ll$ NORMAL if LIB contributes & \textbf{LIB unused} \\
+SC-6 shuffle txt& 0.929 & $\ll$ NORMAL if text used & CLIP text path unused$^\dagger$ \\
+\bottomrule
+\end{tabular}
+\caption{Phase 3 hybrid sanity audit, $n=14$ flip groups, seed 42.}
+\label{tab:phase3-sanity}
+\end{table}%
+}
+
+% --- Table F.3: pure-LIB SC-6 + substitution (Table 5.3) ---
+\newcommand{\tablibsanity}{%
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lrr}
+\toprule
+Probe & motion (B/32) & motion (L/14) \\
+\midrule
+NORMAL row acc.\                & 0.750$^\ddagger$ & 0.917 \\
+SC-6 ZERO text feature          & 0.500 & 0.500 \\
+SC-6 SHUFFLE text feature       & 0.452 & --- \\
+SUBSTITUTION (train-verb text)  & 0.893 & 0.917 \\
+\bottomrule
+\end{tabular}
+\caption{Pure-LIB probes on motion\_sequence axis. $^\ddagger$0.750 is
+the seed-1 retrain used for the sanity battery; the 3-seed mean is
+0.786.}
+\label{tab:lib-sanity}
+\end{table}%
+}
+
+% --- Table F.4: anti-collapse falsification (Table 5.4) ---
+\newcommand{\tabanticollapse}{%
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lrrr}
+\toprule
+Variant & NORMAL & SC-5 drop & SC-6 drop \\
+\midrule
+B1 bottleneck          & 0.286 & $-0.571$ (LIB \emph{hurts}) & $+0.071$ \\
+B2 frozen residual     & 0.357 & n/a (residual detached)     & $+0.357$ \\
+B3 MI penalty          & 0.857 & $-0.071$                    & $+0.087$ \\
+B4 adv.\ $\lambda{=}0.3$ & 0.786 & $+0.071$                  & $+0.286$ \\
+B4 adv.\ $\lambda{=}0.5$ & 0.857 & $0.000$                   & $0.000$ \\
+\bottomrule
+\end{tabular}
+\caption{Phase 4 anti-collapse sanity matrix. Targets: NORMAL
+$\geq 0.75$, SC-5 drop $\geq 0.15$, SC-6 drop $\geq 0.10$. No variant
+passes all three.}
+\label{tab:anti-collapse}
+\end{table}%
+}
+
+% --- Table F.5: cross-baseline probe applicability matrix (Exp 6) ---
+% Source: outputs/phase5/exp6_cross_sanity/SANITY_MATRIX.md (lines 14-21)
+\newcommand{\tabprobematrix}{%
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{lcccccc}
+\toprule
+Method & SC-1 gate=1 & SC-2 gate=0 & SC-3 rand gate & SC-4 zero centroid & SC-5 zero LIB & SC-6 shuffle text \\
+\midrule
+Engineered centroid          & N/A & N/A & N/A & trivial-fail & N/A & not run$^\star$ \\
+LIB v0 (pure CLIP path)      & N/A & N/A & N/A & N/A & trivial-fail & RUN \\
+Phase 3 hybrid (LIB+cent.+gate) & RUN & RUN & RUN & RUN & RUN & RUN \\
+Zero-shot VLM (GPT-4o, Qwen-2B) & N/A & N/A & N/A & N/A & N/A & RUN \\
+\bottomrule
+\end{tabular}
+\caption{Probe applicability per method class. $^\star$Engineered
+centroid SC-6 not run: the centroid path is built by an engineered
+parser that consumes raw instruction text, not the CLIP text
+embedding that SC-6 shuffles; a meaningful probe would target the
+parser input. Documented gap.}
+\label{tab:probe-matrix}
+\end{table*}%
+}
+
+
+% =====================================================================
+% SECTION G: ALL FIGURE PATHS (relative to LaTeX root paper/)
+% Sources copied 2026-05-19 from outputs/phase5/section*_paper/figures/
+% to paper/figures/ (this commit).
+% =====================================================================
+
+\newcommand{\figbench}{figures/fig_3_1_benchmark_schematic.pdf}      % Section 3 Fig 3.1
+\newcommand{\figcliffbthirtytwo}{figures/fig_4_1_motion_cliff_b32.pdf}  % Section 4.2 Fig 4.1
+\newcommand{\figdualarch}{figures/fig_4_2_motion_dual_arch.pdf}      % Section 4.3 Fig 4.2
+\newcommand{\figthreeaxis}{figures/fig_4_3_3axis_matrix.pdf}         % Section 4.4 Fig 4.3
+\newcommand{\figmechanism}{figures/fig_4_4_mechanism_diagram.pdf}    % Section 4.4/4.5 Fig 4.4
+\newcommand{\figcrossmethod}{figures/fig_4_5_cross_method.pdf}       % Section 4.4 Fig 4.5
+
+% Reference index (verify these resolve before submission):
+%   \figbench           -> paper/figures/fig_3_1_benchmark_schematic.pdf      ( 71 KB)
+%   \figcliffbthirtytwo -> paper/figures/fig_4_1_motion_cliff_b32.pdf         ( 27 KB)
+%   \figdualarch        -> paper/figures/fig_4_2_motion_dual_arch.pdf         ( 18 KB)
+%   \figthreeaxis       -> paper/figures/fig_4_3_3axis_matrix.pdf             ( 26 KB)
+%   \figmechanism       -> paper/figures/fig_4_4_mechanism_diagram.pdf        ( 21 KB)
+%   \figcrossmethod     -> paper/figures/fig_4_5_cross_method.pdf             ( 34 KB)
+
+
+% =====================================================================
+% SECTION H: ACCEPTANCE TRAJECTORY (for tracking + Final Report)
+% Source: .aris/checkpoint_phase5_section3_draft.md (Section 3 column)
+% =====================================================================
+
+% Internal acceptance trajectory through Phase 5 (gpt-4o estimates).
+% These are the model's estimates, NOT the realistic submission rate.
+% Realistic conference acceptance for empirical EMNLP main is ~25-30%.
+\newcommand{\acceptExpone}{rejected (retracted overclaim)}
+\newcommand{\acceptExptwo}{40--60\%}
+\newcommand{\acceptExpthree}{50--70\%}
+\newcommand{\acceptExpthreeb}{65\%}
+\newcommand{\acceptExpfour}{75--85\%}
+\newcommand{\acceptSecfourvone}{70--80\%}
+\newcommand{\acceptSecfourvtwo}{85--90\%}
+\newcommand{\acceptExpfive}{80--85\%}
+\newcommand{\acceptFigfourfivesecfive}{85--90\%}
+\newcommand{\acceptSecsixexpsix}{88--92\%}
+\newcommand{\acceptSecthree}{92--95\%}     % current state (Codex estimate)
+\newcommand{\acceptRealistic}{60--72\%}    % realistic float adjusted for venue mix
+
+% Final external review status (for Final Report):
+%   gpt-4o (Codex) post-Section-3:  92-95% EMNLP main acceptance probability
+%   Realistic (Claude's adjustment): 60-72% — Codex estimates are optimistic
+%   for empirical-finding papers with one main dataset and one main
+%   architecture; realistic conference baselines are lower.
+
+% =====================================================================
+% END MASTER_PAPER_DATA.tex
+% =====================================================================

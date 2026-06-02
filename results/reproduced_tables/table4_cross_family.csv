@@ -1,0 +1,7 @@
+class,B-B (OpenAI CLIP),OC-OC (LAION-2B),SG-SG (SigLIP)
+motion_above,0.887,0.679,0.661
+motion_below,0.595,0.839,0.78
+size_BIG,0.925,0.972,0.929
+size_SMALL,0.444,0.929,0.817
+speed_FAST,0.115,0.321,0.619
+speed_SLOW,0.829,0.639,0.667

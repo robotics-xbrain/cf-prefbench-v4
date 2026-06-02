@@ -1,0 +1,6 @@
+{
+  "splits": ["test_seen", "test_heldout_lexical"],
+  "optional_domains": ["metaworld", "maniskill2"],
+  "requires_e2_gate_pass": true
+}
+

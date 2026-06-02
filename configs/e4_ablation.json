@@ -1,0 +1,12 @@
+{
+  "objectives": [
+    "standard_preference_only",
+    "random_lexical_substitution",
+    "paraphrase_invariance_only",
+    "reversal_ce_only",
+    "reversal_ce_margin",
+    "full_cpl"
+  ],
+  "requires_e2_gate_pass": true
+}
+

@@ -1,0 +1,38 @@
+{
+  "above_cliff_mean": 0.875,
+  "arch": "crossattn",
+  "below_cliff_mean": 0.625,
+  "checkpoint": "/path/to/project/experiments/EXP-D/crossattn/seed2024/ckpt_best.pt",
+  "cliff_mean_accuracy": 0.75,
+  "cliff_present": true,
+  "cliff_present_gap_threshold": 0.2,
+  "elapsed_sec": 12.760736227035522,
+  "n_tokens_evaluated": 4,
+  "per_token": {
+    "convey": {
+      "accuracy": 0.8928571428571429,
+      "axis": "motion_sequence",
+      "correct": 25,
+      "n_rows": 28
+    },
+    "scoot": {
+      "accuracy": 0.7142857142857143,
+      "axis": "motion_sequence",
+      "correct": 20,
+      "n_rows": 28
+    },
+    "shift": {
+      "accuracy": 0.8571428571428571,
+      "axis": "motion_sequence",
+      "correct": 24,
+      "n_rows": 28
+    },
+    "transit": {
+      "accuracy": 0.5357142857142857,
+      "axis": "motion_sequence",
+      "correct": 15,
+      "n_rows": 28
+    }
+  },
+  "seed": 2024
+}

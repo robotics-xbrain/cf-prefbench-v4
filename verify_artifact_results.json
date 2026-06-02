@@ -1,0 +1,116 @@
+{
+  "root": "/data3/duxinmiao/projects/cf-prefbench-v4-anonymous",
+  "overall": "PASS",
+  "checks": [
+    {
+      "check": "file:README.md",
+      "ok": true,
+      "detail": "README.md"
+    },
+    {
+      "check": "file:requirements.txt",
+      "ok": true,
+      "detail": "requirements.txt"
+    },
+    {
+      "check": "file:artifact_manifest.md",
+      "ok": true,
+      "detail": "artifact_manifest.md"
+    },
+    {
+      "check": "file:artifact_manifest.json",
+      "ok": true,
+      "detail": "artifact_manifest.json"
+    },
+    {
+      "check": "file:LICENSE_OR_USAGE.md",
+      "ok": true,
+      "detail": "LICENSE_OR_USAGE.md"
+    },
+    {
+      "check": "file:FINAL_ARTIFACT_REPORT.md",
+      "ok": true,
+      "detail": "FINAL_ARTIFACT_REPORT.md"
+    },
+    {
+      "check": "dir:data/cf_prefbench_v4",
+      "ok": true,
+      "detail": "25 entries"
+    },
+    {
+      "check": "dir:cf_pref_learning/models",
+      "ok": true,
+      "detail": "11 entries"
+    },
+    {
+      "check": "dir:configs",
+      "ok": true,
+      "detail": "7 entries"
+    },
+    {
+      "check": "dir:checkpoints/lib_b32",
+      "ok": true,
+      "detail": "8 entries"
+    },
+    {
+      "check": "dir:scripts/artifact",
+      "ok": true,
+      "detail": "4 entries"
+    },
+    {
+      "check": "dir:results/tables",
+      "ok": true,
+      "detail": "4 entries"
+    },
+    {
+      "check": "dir:figures/main",
+      "ok": true,
+      "detail": "5 entries"
+    },
+    {
+      "check": "dir:docs",
+      "ok": true,
+      "detail": "10 entries"
+    },
+    {
+      "check": "data:v4 splits",
+      "ok": true,
+      "detail": "25 jsonl"
+    },
+    {
+      "check": "checkpoints:>=40 .pt",
+      "ok": true,
+      "detail": "48 .pt"
+    },
+    {
+      "check": "results:MASTER_PAPER_DATA",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "figures:final pdf",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "docs:index+map+classification",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "hygiene:no vcs/cache/logs",
+      "ok": true,
+      "detail": "clean"
+    },
+    {
+      "check": "identity_scan_present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "smoke_test_result_present",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}

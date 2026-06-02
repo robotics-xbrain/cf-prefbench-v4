@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "check_video_paths": true,
+  "external_audit_paths": [
+    "/path/to/doctor_program/chapter_v1_core/datasets",
+    "/path/to/doctor_program/chapter_v1/datasets",
+    "/path/to/papers/nips_0/counterfactual_curation/data",
+    "/path/to/bop_datasets"
+  ]
+}
+

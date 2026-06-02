@@ -1,0 +1,811 @@
+{
+  "best_epoch": 60,
+  "best_val_acc": 1.0,
+  "best_val_loss": 0.01898908906106939,
+  "feature_path": "/path/to/project/outputs/auto/v4_new_axes_features_clip_patches.npz",
+  "headline": {
+    "training_log_final": {
+      "epoch": 60,
+      "q_gram_offdiag": 0.20158468186855316,
+      "train_bce": 7.158425411034842e-05,
+      "train_cf": 7.930419716473125e-09,
+      "train_para": 0.015805516839027405,
+      "train_recon": 0.0007112247805343941,
+      "val_acc": 1.0,
+      "val_loss": 0.01898908906106939
+    },
+    "val_acc": 1.0
+  },
+  "hyperparams": {
+    "batch": 32,
+    "d_attr": 128,
+    "device": "cuda",
+    "dropout": 0.3,
+    "epochs": 60,
+    "feature_path": "outputs/auto/v4_new_axes_features_clip_patches.npz",
+    "lambda_bce": 1.0,
+    "lambda_cf": 0.05,
+    "lambda_para": 0.02,
+    "lambda_recon": 0.1,
+    "lr_head": 0.0005,
+    "lr_lib": 0.0001,
+    "n_attr": 4,
+    "output_dir": "outputs/phase5/exp1_axes/lib_v0",
+    "project_root": "/path/to/project",
+    "seed": 2,
+    "variant": "lib_v0_v4_new_axes",
+    "warmup_epochs": 5,
+    "wd": 0.0001
+  },
+  "metrics": {
+    "FCR": {
+      "available": true,
+      "n": 276,
+      "value": 1.0
+    },
+    "LSS": {
+      "available": true,
+      "n": 276,
+      "value": 0.940117301696704
+    },
+    "PFA": {
+      "available": true,
+      "n": 276,
+      "value": 0.9057971014492754
+    },
+    "by_split": {
+      "test_hard_negatives": {
+        "FCR": {
+          "available": true,
+          "n": 36,
+          "value": 1.0
+        },
+        "LSS": {
+          "available": true,
+          "n": 36,
+          "value": 0.959351197106394
+        },
+        "PFA": {
+          "available": true,
+          "n": 36,
+          "value": 1.0
+        },
+        "impossible_premise": {
+          "UCE": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "forced_choice_bias": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "mean_confidence": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "tie_rate": {
+            "available": false,
+            "n": 0,
+            "value": null
+          }
+        },
+        "per_axis": {
+          "motion_sequence": {
+            "PFA": {
+              "available": true,
+              "n": 12,
+              "value": 1.0
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 72,
+              "value": 1.0
+            }
+          },
+          "size": {
+            "PFA": {
+              "available": true,
+              "n": 12,
+              "value": 1.0
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 72,
+              "value": 1.0
+            }
+          },
+          "speed": {
+            "PFA": {
+              "available": true,
+              "n": 12,
+              "value": 1.0
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 72,
+              "value": 1.0
+            }
+          }
+        },
+        "standard_accuracy": {
+          "available": true,
+          "n": 216,
+          "value": 1.0
+        }
+      },
+      "test_heldout_camera": {
+        "FCR": {
+          "available": true,
+          "n": 36,
+          "value": 1.0
+        },
+        "LSS": {
+          "available": true,
+          "n": 36,
+          "value": 0.9158672019110681
+        },
+        "PFA": {
+          "available": true,
+          "n": 36,
+          "value": 0.9444444444444444
+        },
+        "impossible_premise": {
+          "UCE": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "forced_choice_bias": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "mean_confidence": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "tie_rate": {
+            "available": false,
+            "n": 0,
+            "value": null
+          }
+        },
+        "per_axis": {
+          "motion_sequence": {
+            "PFA": {
+              "available": true,
+              "n": 12,
+              "value": 0.8333333333333334
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 72,
+              "value": 0.8333333333333334
+            }
+          },
+          "size": {
+            "PFA": {
+              "available": true,
+              "n": 12,
+              "value": 1.0
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 72,
+              "value": 1.0
+            }
+          },
+          "speed": {
+            "PFA": {
+              "available": true,
+              "n": 12,
+              "value": 1.0
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 72,
+              "value": 1.0
+            }
+          }
+        },
+        "standard_accuracy": {
+          "available": true,
+          "n": 216,
+          "value": 0.9444444444444444
+        }
+      },
+      "test_heldout_color": {
+        "FCR": {
+          "available": true,
+          "n": 42,
+          "value": 1.0
+        },
+        "LSS": {
+          "available": true,
+          "n": 42,
+          "value": 0.9652893541006701
+        },
+        "PFA": {
+          "available": true,
+          "n": 42,
+          "value": 1.0
+        },
+        "impossible_premise": {
+          "UCE": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "forced_choice_bias": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "mean_confidence": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "tie_rate": {
+            "available": false,
+            "n": 0,
+            "value": null
+          }
+        },
+        "per_axis": {
+          "motion_sequence": {
+            "PFA": {
+              "available": true,
+              "n": 14,
+              "value": 1.0
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 84,
+              "value": 1.0
+            }
+          },
+          "size": {
+            "PFA": {
+              "available": true,
+              "n": 14,
+              "value": 1.0
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 84,
+              "value": 1.0
+            }
+          },
+          "speed": {
+            "PFA": {
+              "available": true,
+              "n": 14,
+              "value": 1.0
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 84,
+              "value": 1.0
+            }
+          }
+        },
+        "standard_accuracy": {
+          "available": true,
+          "n": 252,
+          "value": 1.0
+        }
+      },
+      "test_heldout_lexical": {
+        "FCR": {
+          "available": true,
+          "n": 42,
+          "value": 1.0
+        },
+        "LSS": {
+          "available": true,
+          "n": 42,
+          "value": 0.9253399020580478
+        },
+        "PFA": {
+          "available": true,
+          "n": 42,
+          "value": 0.5476190476190477
+        },
+        "impossible_premise": {
+          "UCE": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "forced_choice_bias": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "mean_confidence": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "tie_rate": {
+            "available": false,
+            "n": 0,
+            "value": null
+          }
+        },
+        "per_axis": {
+          "motion_sequence": {
+            "PFA": {
+              "available": true,
+              "n": 14,
+              "value": 0.0
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 84,
+              "value": 0.7857142857142857
+            }
+          },
+          "size": {
+            "PFA": {
+              "available": true,
+              "n": 14,
+              "value": 0.9285714285714286
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 84,
+              "value": 0.9285714285714286
+            }
+          },
+          "speed": {
+            "PFA": {
+              "available": true,
+              "n": 14,
+              "value": 0.7142857142857143
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 84,
+              "value": 0.9523809523809523
+            }
+          }
+        },
+        "standard_accuracy": {
+          "available": true,
+          "n": 252,
+          "value": 0.8888888888888888
+        }
+      },
+      "test_heldout_spatial": {
+        "FCR": {
+          "available": true,
+          "n": 42,
+          "value": 1.0
+        },
+        "LSS": {
+          "available": true,
+          "n": 42,
+          "value": 0.9621749565025138
+        },
+        "PFA": {
+          "available": true,
+          "n": 42,
+          "value": 1.0
+        },
+        "impossible_premise": {
+          "UCE": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "forced_choice_bias": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "mean_confidence": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "tie_rate": {
+            "available": false,
+            "n": 0,
+            "value": null
+          }
+        },
+        "per_axis": {
+          "motion_sequence": {
+            "PFA": {
+              "available": true,
+              "n": 14,
+              "value": 1.0
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 84,
+              "value": 1.0
+            }
+          },
+          "size": {
+            "PFA": {
+              "available": true,
+              "n": 14,
+              "value": 1.0
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 84,
+              "value": 1.0
+            }
+          },
+          "speed": {
+            "PFA": {
+              "available": true,
+              "n": 14,
+              "value": 1.0
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 84,
+              "value": 1.0
+            }
+          }
+        },
+        "standard_accuracy": {
+          "available": true,
+          "n": 252,
+          "value": 1.0
+        }
+      },
+      "test_seen": {
+        "FCR": {
+          "available": true,
+          "n": 36,
+          "value": 1.0
+        },
+        "LSS": {
+          "available": true,
+          "n": 36,
+          "value": 0.8756310607768683
+        },
+        "PFA": {
+          "available": true,
+          "n": 36,
+          "value": 0.8611111111111112
+        },
+        "impossible_premise": {
+          "UCE": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "forced_choice_bias": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "mean_confidence": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "tie_rate": {
+            "available": false,
+            "n": 0,
+            "value": null
+          }
+        },
+        "per_axis": {
+          "motion_sequence": {
+            "PFA": {
+              "available": true,
+              "n": 12,
+              "value": 0.8333333333333334
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 72,
+              "value": 0.8333333333333334
+            }
+          },
+          "size": {
+            "PFA": {
+              "available": true,
+              "n": 12,
+              "value": 0.75
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 72,
+              "value": 0.75
+            }
+          },
+          "speed": {
+            "PFA": {
+              "available": true,
+              "n": 12,
+              "value": 1.0
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 72,
+              "value": 1.0
+            }
+          }
+        },
+        "standard_accuracy": {
+          "available": true,
+          "n": 216,
+          "value": 0.8611111111111112
+        }
+      },
+      "val": {
+        "FCR": {
+          "available": true,
+          "n": 42,
+          "value": 1.0
+        },
+        "LSS": {
+          "available": true,
+          "n": 42,
+          "value": 0.9672385186648258
+        },
+        "PFA": {
+          "available": true,
+          "n": 42,
+          "value": 1.0
+        },
+        "impossible_premise": {
+          "UCE": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "forced_choice_bias": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "mean_confidence": {
+            "available": false,
+            "n": 0,
+            "value": null
+          },
+          "tie_rate": {
+            "available": false,
+            "n": 0,
+            "value": null
+          }
+        },
+        "per_axis": {
+          "motion_sequence": {
+            "PFA": {
+              "available": true,
+              "n": 14,
+              "value": 1.0
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 84,
+              "value": 1.0
+            }
+          },
+          "size": {
+            "PFA": {
+              "available": true,
+              "n": 14,
+              "value": 1.0
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 84,
+              "value": 1.0
+            }
+          },
+          "speed": {
+            "PFA": {
+              "available": true,
+              "n": 14,
+              "value": 1.0
+            },
+            "standard_accuracy": {
+              "available": true,
+              "n": 84,
+              "value": 1.0
+            }
+          }
+        },
+        "standard_accuracy": {
+          "available": true,
+          "n": 252,
+          "value": 1.0
+        }
+      }
+    },
+    "impossible_premise": {
+      "UCE": {
+        "available": false,
+        "n": 0,
+        "value": null
+      },
+      "forced_choice_bias": {
+        "available": false,
+        "n": 0,
+        "value": null
+      },
+      "mean_confidence": {
+        "available": false,
+        "n": 0,
+        "value": null
+      },
+      "tie_rate": {
+        "available": false,
+        "n": 0,
+        "value": null
+      }
+    },
+    "per_axis": {
+      "motion_sequence": {
+        "PFA": {
+          "available": true,
+          "n": 92,
+          "value": 0.8043478260869565
+        },
+        "standard_accuracy": {
+          "available": true,
+          "n": 552,
+          "value": 0.9239130434782609
+        }
+      },
+      "size": {
+        "PFA": {
+          "available": true,
+          "n": 92,
+          "value": 0.9565217391304348
+        },
+        "standard_accuracy": {
+          "available": true,
+          "n": 552,
+          "value": 0.9565217391304348
+        }
+      },
+      "speed": {
+        "PFA": {
+          "available": true,
+          "n": 92,
+          "value": 0.9565217391304348
+        },
+        "standard_accuracy": {
+          "available": true,
+          "n": 552,
+          "value": 0.9927536231884058
+        }
+      }
+    },
+    "standard_accuracy": {
+      "available": true,
+      "n": 1656,
+      "value": 0.9577294685990339
+    }
+  },
+  "per_axis_overall": {
+    "motion_sequence": {
+      "FCR": {
+        "available": true,
+        "n": 92,
+        "value": 1.0
+      },
+      "LSS": {
+        "available": true,
+        "n": 92,
+        "value": 0.8870876917626249
+      },
+      "PFA": {
+        "available": true,
+        "n": 92,
+        "value": 0.8043478260869565
+      },
+      "per_axis": {
+        "motion_sequence": {
+          "PFA": {
+            "available": true,
+            "n": 92,
+            "value": 0.8043478260869565
+          },
+          "standard_accuracy": {
+            "available": true,
+            "n": 552,
+            "value": 0.9239130434782609
+          }
+        }
+      },
+      "standard_accuracy": {
+        "available": true,
+        "n": 552,
+        "value": 0.9239130434782609
+      }
+    },
+    "size": {
+      "FCR": {
+        "available": true,
+        "n": 92,
+        "value": 1.0
+      },
+      "LSS": {
+        "available": true,
+        "n": 92,
+        "value": 0.9516882909006298
+      },
+      "PFA": {
+        "available": true,
+        "n": 92,
+        "value": 0.9565217391304348
+      },
+      "per_axis": {
+        "size": {
+          "PFA": {
+            "available": true,
+            "n": 92,
+            "value": 0.9565217391304348
+          },
+          "standard_accuracy": {
+            "available": true,
+            "n": 552,
+            "value": 0.9565217391304348
+          }
+        }
+      },
+      "standard_accuracy": {
+        "available": true,
+        "n": 552,
+        "value": 0.9565217391304348
+      }
+    },
+    "speed": {
+      "FCR": {
+        "available": true,
+        "n": 92,
+        "value": 1.0
+      },
+      "LSS": {
+        "available": true,
+        "n": 92,
+        "value": 0.9815759224268573
+      },
+      "PFA": {
+        "available": true,
+        "n": 92,
+        "value": 0.9565217391304348
+      },
+      "per_axis": {
+        "speed": {
+          "PFA": {
+            "available": true,
+            "n": 92,
+            "value": 0.9565217391304348
+          },
+          "standard_accuracy": {
+            "available": true,
+            "n": 552,
+            "value": 0.9927536231884058
+          }
+        }
+      },
+      "standard_accuracy": {
+        "available": true,
+        "n": 552,
+        "value": 0.9927536231884058
+      }
+    }
+  },
+  "seed": 2,
+  "tie_threshold": 0.0,
+  "variant": "lib_v0_v4_new_axes"
+}

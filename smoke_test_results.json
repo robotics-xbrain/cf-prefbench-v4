@@ -1,0 +1,32 @@
+{
+  "root": "/data3/duxinmiao/projects/cf-prefbench-v4-anonymous",
+  "steps": [
+    {
+      "name": "environment",
+      "status": "PASS",
+      "detail": "python=3.10.19 numpy=2.0.1 torch=2.5.1"
+    },
+    {
+      "name": "dataset_rows",
+      "status": "PASS",
+      "detail": "core total=7749 (expected 7749 -> OK); per-split={'train': 3696, 'val': 615, 'test_seen': 531, 'test_heldout_lexical': 615, 'test_heldout_camera': 531, 'test_heldout_color': 615, 'test_heldout_spatial': 615, 'test_hard_negatives': 531}"
+    },
+    {
+      "name": "feature_cache",
+      "status": "PASS",
+      "detail": "smoke_test_features.npz keys=['video_patches', 'text_features', 'video_paths', 'instructions_sample'] shapes={'video_patches': (8, 8, 196, 768), 'text_features': (18, 768), 'video_paths': (8,), 'instructions_sample': (18,)}"
+    },
+    {
+      "name": "checkpoint",
+      "status": "PASS",
+      "detail": "lib_v0_b32_seed1_best.pt top-keys=['lib.q_proj.weight', 'lib.q_proj.bias', 'lib.patch_proj.weight', 'lib.patch_proj.bias', 'lib.patch_ln.weight', 'lib.patch_ln.bias'] tensors=28 params=703013"
+    },
+    {
+      "name": "dry_run_forward",
+      "status": "PASS",
+      "detail": "LIB(text_dim=768,patch_dim=768) forward OK; binding(4, 4) pref_scores=[0.1049, 0.0511, 0.0666, 0.05] (untrained weights = dry run)"
+    }
+  ],
+  "overall": "PASS",
+  "note": "Core integrity checks (env/data/features/checkpoint) gate the result. SKIP on dry_run_forward means torch was unavailable; it is not a pass. Paper-number reproduction requires regenerating the excluded frozen-CLIP feature caches (see docs/REPRODUCTION_GUIDE.md)."
+}

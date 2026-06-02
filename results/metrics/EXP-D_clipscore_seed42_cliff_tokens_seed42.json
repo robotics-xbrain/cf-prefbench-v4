@@ -1,0 +1,38 @@
+{
+  "above_cliff_mean": 0.5,
+  "arch": "clipscore",
+  "below_cliff_mean": 0.5,
+  "checkpoint": "/path/to/project/experiments/EXP-D/clipscore/seed42/ckpt_best.pt",
+  "cliff_mean_accuracy": 0.5,
+  "cliff_present": false,
+  "cliff_present_gap_threshold": 0.2,
+  "elapsed_sec": 14.206403017044067,
+  "n_tokens_evaluated": 4,
+  "per_token": {
+    "convey": {
+      "accuracy": 0.5,
+      "axis": "motion_sequence",
+      "correct": 14,
+      "n_rows": 28
+    },
+    "scoot": {
+      "accuracy": 0.5,
+      "axis": "motion_sequence",
+      "correct": 14,
+      "n_rows": 28
+    },
+    "shift": {
+      "accuracy": 0.5,
+      "axis": "motion_sequence",
+      "correct": 14,
+      "n_rows": 28
+    },
+    "transit": {
+      "accuracy": 0.5,
+      "axis": "motion_sequence",
+      "correct": 14,
+      "n_rows": 28
+    }
+  },
+  "seed": 42
+}

@@ -1,0 +1,59 @@
+{
+  "paper_pdf_path": "/path/to/project/final_paper_snapshot/overleaf_final/EMNLP_final_overleaf.pdf",
+  "sha256": "40901f289af2bdcab9abe42511f99b957f3ecaabeb2c811c634a1f886c6e37c8",
+  "file_size_bytes": 1029235,
+  "page_count": 16,
+  "title": "When Paraphrases Break Binding: A Lexical Cliff in Small Heads over Frozen CLIP Text Embeddings",
+  "author_block": "Anonymous ACL submission",
+  "artifact_statement": "CF-PrefBench v4, LIB v0 checkpoints, and probe scripts are released as an anonymous artifact.",
+  "extraction_notes": "PDF is the only source of truth; Overleaf LaTeX source not available. Parsed via pdftotext -> outputs/anonymous_artifact_build/EMNLP_final_overleaf.txt. All scope decisions derive from this single PDF. No detected table/figure/appendix item is absent; nothing extra beyond Tables 1-19, Figures 1-6, Appendices A-M.",
+  "figures": [
+    {"id": "Figure 1", "title": "LIB v0 architecture", "section": "3"},
+    {"id": "Figure 2", "title": "Cliff-accuracy heatmap under the 2x2 encoder factorial", "section": "4.3"},
+    {"id": "Figure 3", "title": "Cross-family validation of the lexical cliff (B-B/OC-OC/SG-SG)", "section": "4.4"},
+    {"id": "Figure 4", "title": "Two cliff mechanisms: motion cosine-correlated; size/speed class-bimodal", "section": "4.5"},
+    {"id": "Figure 5", "title": "Motion-verb cliff under two backbones", "section": "Appendix C"},
+    {"id": "Figure 6", "title": "Cliff reproduces on 3/3 architecturally viable learned heads", "section": "Appendix D"}
+  ],
+  "tables": [
+    {"id": "Table 1", "title": "ViT-B/32 motion-verb cliff on the 4-verb cliff probe", "section": "4.1"},
+    {"id": "Table 2", "title": "Motion-verb cliff under two backbones", "section": "4.2"},
+    {"id": "Table 3", "title": "Cliff accuracy under the 2x2 {visual}x{text} encoder factorial", "section": "4.3"},
+    {"id": "Table 4", "title": "Cross-family validation (matched n=3): B-B, OC-OC, SG-SG", "section": "4.4"},
+    {"id": "Table 5", "title": "Three-axis x two-architecture cliff matrix on expanded held-out pool (n=8)", "section": "4.5"},
+    {"id": "Table 6", "title": "Substitution recovery on ViT-B/32 motion verbs", "section": "Appendix A"},
+    {"id": "Table 7", "title": "Per-token cliff results on expanded n=16 size/speed + 4 motion (n=8)", "section": "Appendix C"},
+    {"id": "Table 8", "title": "Numerical values for Figure 6 (alternative-head above-vs-below gap)", "section": "Appendix D"},
+    {"id": "Table 9", "title": "Per-split sizes (identical across 7 axes) + impossible_premise", "section": "Appendix E"},
+    {"id": "Table 10", "title": "Train and held-out paraphrase pools per binding axis", "section": "Appendix E"},
+    {"id": "Table 11", "title": "LIB-B/32 held-out-lexical accuracy across all 7 axes (cliff incidence)", "section": "Appendix F"},
+    {"id": "Table 12", "title": "v3 action axis: test_seen vs test_heldout_lexical row accuracy", "section": "Appendix G"},
+    {"id": "Table 13", "title": "v3 action axis: per-held-out-instruction row accuracy", "section": "Appendix G"},
+    {"id": "Table 14", "title": "Probe applicability per method class", "section": "Appendix I.2"},
+    {"id": "Table 15", "title": "Phase 3 hybrid sanity audit, v3 test_heldout_color", "section": "Appendix I.3"},
+    {"id": "Table 16", "title": "Pure-LIB sanity probes on the motion_sequence axis", "section": "Appendix I.3"},
+    {"id": "Table 17", "title": "Phase 4 anti-collapse sanity matrix", "section": "Appendix I.3"},
+    {"id": "Table 18", "title": "Per-token cliff accuracy under three contrastive systems", "section": "Appendix K"},
+    {"id": "Table 19", "title": "Per-class zero-shot VLM accuracy on cliff test set", "section": "Appendix L"}
+  ],
+  "appendix_sections": [
+    {"id": "A", "title": "Substitution Recovery on Motion Verbs", "backs": ["Table 6"]},
+    {"id": "B", "title": "Expanded Motion-Verb Pool (n=12) and confound controls", "backs": ["Figure 4(a)"]},
+    {"id": "C", "title": "Per-Token Cliff Results and Cliff Figures", "backs": ["Table 7", "Figure 5"]},
+    {"id": "D", "title": "Robustness Across Alternative Heads (full results)", "backs": ["Figure 6", "Table 8"]},
+    {"id": "E", "title": "CF-PrefBench v4 Split Sizes and Paraphrase Pools", "backs": ["Table 9", "Table 10"]},
+    {"id": "F", "title": "Cliff Incidence Across All Seven Axes", "backs": ["Table 11"]},
+    {"id": "G", "title": "Replication on the v3 Action Axis", "backs": ["Table 12", "Table 13"]},
+    {"id": "H", "title": "LIB v0 Architecture Details", "backs": ["Figure 1"]},
+    {"id": "I", "title": "Sanity Battery Details", "backs": ["Table 14", "Table 15", "Table 16", "Table 17"]},
+    {"id": "J", "title": "Class-Prior Audit (uninformative-text probe)", "backs": ["section 6 label-balance claim"]},
+    {"id": "K", "title": "SigLIP Cross-Family Per-Token Results", "backs": ["Table 18"]},
+    {"id": "L", "title": "Zero-Shot VLM Decodability of Cliff Tokens", "backs": ["Table 19"]},
+    {"id": "M", "title": "Out-of-Domain Rendered Validation (CLEVRER & ManiSkill PushCube)", "backs": ["section 4.7"]}
+  ],
+  "unresolved_items": [
+    "Appendix M OOD eval scripts + per-trial predictions not found as discrete files (only oversized feature caches + qualitative videos); numbers preserved in MASTER_PAPER_DATA.tex and PDF -> MISSING_SOURCE_DATA/WARNING.",
+    "Figure 1 architecture is hand-drawn TikZ; no standalone source; final PDF is authoritative rendering.",
+    "Camera-ready figure filenames use old section numbering; mapping to final-PDF figure numbers documented in figures/README.md."
+  ]
+}

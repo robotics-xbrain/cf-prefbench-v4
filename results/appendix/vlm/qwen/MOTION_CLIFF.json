@@ -1,0 +1,113 @@
+{
+  "rows": [
+    {
+      "class": "motion above-cliff",
+      "cos_b32": 0.938,
+      "lib_b32": 0.929,
+      "lib_l14": 0.929,
+      "n": 24,
+      "token": "convey",
+      "vlm_acc": 0.4583333333333333
+    },
+    {
+      "class": "motion above-cliff",
+      "cos_b32": 0.968,
+      "lib_b32": 0.917,
+      "lib_l14": 0.905,
+      "n": 9,
+      "token": "shift",
+      "vlm_acc": 0.5555555555555556
+    },
+    {
+      "class": "motion below-cliff",
+      "cos_b32": 0.927,
+      "lib_b32": 0.679,
+      "lib_l14": 0.905,
+      "n": 15,
+      "token": "scoot",
+      "vlm_acc": 0.3333333333333333
+    },
+    {
+      "class": "motion below-cliff",
+      "cos_b32": 0.915,
+      "lib_b32": 0.5,
+      "lib_l14": 0.917,
+      "n": 9,
+      "token": "transit",
+      "vlm_acc": 0.5555555555555556
+    },
+    {
+      "class": "size BIG",
+      "cos_b32": 0.898,
+      "lib_b32": 0.921,
+      "lib_l14": 0.81,
+      "n": 41,
+      "token": "colossal",
+      "vlm_acc": 0.43902439024390244
+    },
+    {
+      "class": "size BIG",
+      "cos_b32": 0.918,
+      "lib_b32": 0.929,
+      "lib_l14": 0.81,
+      "n": 40,
+      "token": "gigantic",
+      "vlm_acc": 0.45
+    },
+    {
+      "class": "size SMALL",
+      "cos_b32": 0.918,
+      "lib_b32": 0.397,
+      "lib_l14": 0.817,
+      "n": 39,
+      "token": "miniature",
+      "vlm_acc": 0.5384615384615384
+    },
+    {
+      "class": "size SMALL",
+      "cos_b32": 0.917,
+      "lib_b32": 0.492,
+      "lib_l14": 0.77,
+      "n": 39,
+      "token": "petite",
+      "vlm_acc": 0.5128205128205128
+    },
+    {
+      "class": "speed FAST",
+      "cos_b32": 0.937,
+      "lib_b32": 0.048,
+      "lib_l14": 0.317,
+      "n": 31,
+      "token": "briskly",
+      "vlm_acc": 0.3548387096774194
+    },
+    {
+      "class": "speed FAST",
+      "cos_b32": 0.942,
+      "lib_b32": 0.183,
+      "lib_l14": 0.46,
+      "n": 41,
+      "token": "speedily",
+      "vlm_acc": 0.5365853658536586
+    },
+    {
+      "class": "speed SLOW",
+      "cos_b32": 0.938,
+      "lib_b32": 0.698,
+      "lib_l14": 1.0,
+      "n": 28,
+      "token": "gradually",
+      "vlm_acc": 0.42857142857142855
+    },
+    {
+      "class": "speed SLOW",
+      "cos_b32": 0.932,
+      "lib_b32": 0.96,
+      "lib_l14": 0.992,
+      "n": 31,
+      "token": "sluggishly",
+      "vlm_acc": 0.4838709677419355
+    }
+  ],
+  "vlm": "qwen2-vl-2b"
+}

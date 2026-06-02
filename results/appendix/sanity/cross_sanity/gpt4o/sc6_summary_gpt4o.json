@@ -1,0 +1,8 @@
+{
+  "accuracy": 0.5157894736842106,
+  "backend": "gpt4o",
+  "cost_usd": 0.3010075000000002,
+  "n": 95,
+  "n_correct": 49,
+  "n_motion_rows_total": 112
+}

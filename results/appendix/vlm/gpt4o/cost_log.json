@@ -1,0 +1,2245 @@
+{
+  "per_call": [
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000007_0_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000007_0_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0027,
+      "example_id": "v4_ex_000007_0_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000007_1_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000007_1_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0027,
+      "example_id": "v4_ex_000007_1_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000010_0_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026600000000000005,
+      "example_id": "v4_ex_000010_0_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0027,
+      "example_id": "v4_ex_000010_0_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000010_1_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000010_1_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.00268,
+      "example_id": "v4_ex_000010_1_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026500000000000004,
+      "example_id": "v4_ex_000023_0_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026500000000000004,
+      "example_id": "v4_ex_000023_0_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000023_0_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000023_1_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000023_1_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000023_1_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000086_0_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000086_0_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0027,
+      "example_id": "v4_ex_000086_0_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000086_1_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000086_1_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0027,
+      "example_id": "v4_ex_000086_1_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026700000000000005,
+      "example_id": "v4_ex_000127_0_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000127_0_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0027,
+      "example_id": "v4_ex_000127_0_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000127_1_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026600000000000005,
+      "example_id": "v4_ex_000127_1_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0027,
+      "example_id": "v4_ex_000127_1_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000134_0_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000134_0_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0027,
+      "example_id": "v4_ex_000134_0_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000134_1_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000134_1_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0027,
+      "example_id": "v4_ex_000134_1_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000163_0_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026500000000000004,
+      "example_id": "v4_ex_000163_0_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026600000000000005,
+      "example_id": "v4_ex_000163_0_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000163_1_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026500000000000004,
+      "example_id": "v4_ex_000163_1_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026600000000000005,
+      "example_id": "v4_ex_000163_1_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000255_0_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000255_0_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0027,
+      "example_id": "v4_ex_000255_0_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000255_1_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000255_1_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0027,
+      "example_id": "v4_ex_000255_1_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000271_0_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000271_0_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0027,
+      "example_id": "v4_ex_000271_0_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000271_1_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000271_1_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0027,
+      "example_id": "v4_ex_000271_1_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000289_0_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000289_0_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000289_0_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.00272,
+      "example_id": "v4_ex_000289_1_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000289_1_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000289_1_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000365_0_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000365_0_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0027,
+      "example_id": "v4_ex_000365_0_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000365_1_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000365_1_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.00268,
+      "example_id": "v4_ex_000365_1_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.00272,
+      "example_id": "v4_ex_000428_0_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000428_0_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0027,
+      "example_id": "v4_ex_000428_0_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000428_1_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000428_1_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0027,
+      "example_id": "v4_ex_000428_1_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000430_0_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000430_0_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000430_0_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000430_1_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000430_1_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000430_1_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000492_0_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000492_0_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000492_0_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.00272,
+      "example_id": "v4_ex_000492_1_0",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000492_1_1",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026900000000000006,
+      "example_id": "v4_ex_000492_1_2",
+      "split": "test_heldout_lexical"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000007_0_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000007_1_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000010_0_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000010_1_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026525000000000003,
+      "example_id": "v4scoot_ex_000023_0_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026525000000000003,
+      "example_id": "v4scoot_ex_000023_1_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000086_0_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000086_1_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026825,
+      "example_id": "v4scoot_ex_000127_0_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000127_1_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000134_0_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000134_1_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000163_0_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000163_1_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000255_0_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000255_1_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000271_0_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000271_1_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000289_0_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0027225,
+      "example_id": "v4scoot_ex_000289_1_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000365_0_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000365_1_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000428_0_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000428_1_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000430_0_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000430_1_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000492_0_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026925000000000004,
+      "example_id": "v4scoot_ex_000492_1_0",
+      "split": "test_heldout_lexical_scoot"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_miniature_v4_ex_000041_1_0",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027275000000000003,
+      "example_id": "v4size_miniature_v4_ex_000041_1_1",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027075000000000003,
+      "example_id": "v4size_miniature_v4_ex_000041_1_2",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027675000000000004,
+      "example_id": "v4size_miniature_v4_ex_000042_1_0",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0026875000000000007,
+      "example_id": "v4size_miniature_v4_ex_000042_1_1",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0026875000000000007,
+      "example_id": "v4size_miniature_v4_ex_000042_1_2",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027475000000000004,
+      "example_id": "v4size_miniature_v4_ex_000062_0_0",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4size_miniature_v4_ex_000062_0_1",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027075000000000003,
+      "example_id": "v4size_miniature_v4_ex_000062_0_2",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0026875000000000007,
+      "example_id": "v4size_miniature_v4_ex_000185_1_0",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0026875000000000007,
+      "example_id": "v4size_miniature_v4_ex_000185_1_1",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027075000000000003,
+      "example_id": "v4size_miniature_v4_ex_000185_1_2",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_miniature_v4_ex_000188_0_0",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027275000000000003,
+      "example_id": "v4size_miniature_v4_ex_000188_0_1",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0028175000000000006,
+      "example_id": "v4size_miniature_v4_ex_000188_0_2",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4size_miniature_v4_ex_000290_0_0",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_miniature_v4_ex_000290_0_1",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4size_miniature_v4_ex_000290_0_2",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0026775,
+      "example_id": "v4size_miniature_v4_ex_000338_1_0",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027075000000000003,
+      "example_id": "v4size_miniature_v4_ex_000338_1_1",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027575000000000004,
+      "example_id": "v4size_miniature_v4_ex_000338_1_2",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027600000000000003,
+      "example_id": "v4size_miniature_v4_ex_000373_0_0",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027400000000000002,
+      "example_id": "v4size_miniature_v4_ex_000373_0_1",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.00272,
+      "example_id": "v4size_miniature_v4_ex_000373_0_2",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0026575000000000006,
+      "example_id": "v4size_miniature_v4_ex_000417_0_0",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027475000000000004,
+      "example_id": "v4size_miniature_v4_ex_000417_0_1",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027775000000000005,
+      "example_id": "v4size_miniature_v4_ex_000417_0_2",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0026875000000000007,
+      "example_id": "v4size_miniature_v4_ex_000450_1_0",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027575000000000004,
+      "example_id": "v4size_miniature_v4_ex_000450_1_1",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027475000000000004,
+      "example_id": "v4size_miniature_v4_ex_000450_1_2",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027275000000000003,
+      "example_id": "v4size_miniature_v4_ex_000460_0_0",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027475000000000004,
+      "example_id": "v4size_miniature_v4_ex_000460_0_1",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4size_miniature_v4_ex_000460_0_2",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0026575000000000006,
+      "example_id": "v4size_miniature_v4_ex_000462_1_0",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027275000000000003,
+      "example_id": "v4size_miniature_v4_ex_000462_1_1",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_miniature_v4_ex_000462_1_2",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0026775,
+      "example_id": "v4size_miniature_v4_ex_000517_1_0",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027275000000000003,
+      "example_id": "v4size_miniature_v4_ex_000517_1_1",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0026775,
+      "example_id": "v4size_miniature_v4_ex_000517_1_2",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0026575000000000006,
+      "example_id": "v4size_miniature_v4_ex_000524_0_0",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0026775,
+      "example_id": "v4size_miniature_v4_ex_000524_0_1",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4size_miniature_v4_ex_000524_0_2",
+      "split": "test_heldout_size_miniature"
+    },
+    {
+      "cost": 0.0026575000000000006,
+      "example_id": "v4size_petite_v4_ex_000041_1_0",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027075000000000003,
+      "example_id": "v4size_petite_v4_ex_000041_1_1",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4size_petite_v4_ex_000041_1_2",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0026875000000000007,
+      "example_id": "v4size_petite_v4_ex_000042_1_0",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027775000000000005,
+      "example_id": "v4size_petite_v4_ex_000042_1_1",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4size_petite_v4_ex_000042_1_2",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0026575000000000006,
+      "example_id": "v4size_petite_v4_ex_000062_0_0",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027275000000000003,
+      "example_id": "v4size_petite_v4_ex_000062_0_1",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4size_petite_v4_ex_000062_0_2",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4size_petite_v4_ex_000185_1_0",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027875000000000005,
+      "example_id": "v4size_petite_v4_ex_000185_1_1",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027075000000000003,
+      "example_id": "v4size_petite_v4_ex_000185_1_2",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027275000000000003,
+      "example_id": "v4size_petite_v4_ex_000188_0_0",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027275000000000003,
+      "example_id": "v4size_petite_v4_ex_000188_0_1",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027275000000000003,
+      "example_id": "v4size_petite_v4_ex_000188_0_2",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0026775,
+      "example_id": "v4size_petite_v4_ex_000290_0_0",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_petite_v4_ex_000290_0_1",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4size_petite_v4_ex_000290_0_2",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4size_petite_v4_ex_000338_1_0",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0026275000000000005,
+      "example_id": "v4size_petite_v4_ex_000338_1_1",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027075000000000003,
+      "example_id": "v4size_petite_v4_ex_000338_1_2",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027500000000000003,
+      "example_id": "v4size_petite_v4_ex_000373_0_0",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027400000000000002,
+      "example_id": "v4size_petite_v4_ex_000373_0_1",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027400000000000002,
+      "example_id": "v4size_petite_v4_ex_000373_0_2",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027475000000000004,
+      "example_id": "v4size_petite_v4_ex_000417_0_0",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4size_petite_v4_ex_000417_0_1",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027475000000000004,
+      "example_id": "v4size_petite_v4_ex_000417_0_2",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027075000000000003,
+      "example_id": "v4size_petite_v4_ex_000450_1_0",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027575000000000004,
+      "example_id": "v4size_petite_v4_ex_000450_1_1",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027575000000000004,
+      "example_id": "v4size_petite_v4_ex_000450_1_2",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027575000000000004,
+      "example_id": "v4size_petite_v4_ex_000460_0_0",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4size_petite_v4_ex_000460_0_1",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4size_petite_v4_ex_000460_0_2",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0026575000000000006,
+      "example_id": "v4size_petite_v4_ex_000462_1_0",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0026575000000000006,
+      "example_id": "v4size_petite_v4_ex_000462_1_1",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0028075000000000005,
+      "example_id": "v4size_petite_v4_ex_000462_1_2",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0026875000000000007,
+      "example_id": "v4size_petite_v4_ex_000517_1_0",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4size_petite_v4_ex_000517_1_1",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4size_petite_v4_ex_000517_1_2",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4size_petite_v4_ex_000524_0_0",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0026875000000000007,
+      "example_id": "v4size_petite_v4_ex_000524_0_1",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_petite_v4_ex_000524_0_2",
+      "split": "test_heldout_size_petite"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4size_colossal_v4_ex_000041_0_0",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_colossal_v4_ex_000041_0_1",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4size_colossal_v4_ex_000041_0_2",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_colossal_v4_ex_000042_0_0",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_colossal_v4_ex_000042_0_1",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_colossal_v4_ex_000042_0_2",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0027275000000000003,
+      "example_id": "v4size_colossal_v4_ex_000062_1_0",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_colossal_v4_ex_000062_1_1",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4size_colossal_v4_ex_000062_1_2",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4size_colossal_v4_ex_000185_0_0",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4size_colossal_v4_ex_000185_0_1",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4size_colossal_v4_ex_000185_0_2",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026775,
+      "example_id": "v4size_colossal_v4_ex_000188_1_0",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4size_colossal_v4_ex_000188_1_1",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4size_colossal_v4_ex_000188_1_2",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026275000000000005,
+      "example_id": "v4size_colossal_v4_ex_000290_1_0",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026475000000000005,
+      "example_id": "v4size_colossal_v4_ex_000290_1_1",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0028175000000000006,
+      "example_id": "v4size_colossal_v4_ex_000290_1_2",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0027075000000000003,
+      "example_id": "v4size_colossal_v4_ex_000338_0_0",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0027075000000000003,
+      "example_id": "v4size_colossal_v4_ex_000338_0_1",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0027675000000000004,
+      "example_id": "v4size_colossal_v4_ex_000338_0_2",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_colossal_v4_ex_000373_1_0",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026875000000000007,
+      "example_id": "v4size_colossal_v4_ex_000373_1_1",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4size_colossal_v4_ex_000373_1_2",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4size_colossal_v4_ex_000417_1_0",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4size_colossal_v4_ex_000417_1_1",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0027275000000000003,
+      "example_id": "v4size_colossal_v4_ex_000417_1_2",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4size_colossal_v4_ex_000450_0_0",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026475000000000005,
+      "example_id": "v4size_colossal_v4_ex_000450_0_1",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0027075000000000003,
+      "example_id": "v4size_colossal_v4_ex_000450_0_2",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_colossal_v4_ex_000460_1_0",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_colossal_v4_ex_000460_1_1",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0027275000000000003,
+      "example_id": "v4size_colossal_v4_ex_000460_1_2",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0027275000000000003,
+      "example_id": "v4size_colossal_v4_ex_000462_0_0",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0027075000000000003,
+      "example_id": "v4size_colossal_v4_ex_000462_0_1",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4size_colossal_v4_ex_000462_0_2",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0027975000000000005,
+      "example_id": "v4size_colossal_v4_ex_000517_0_0",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026275000000000005,
+      "example_id": "v4size_colossal_v4_ex_000517_0_1",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026875000000000007,
+      "example_id": "v4size_colossal_v4_ex_000517_0_2",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_colossal_v4_ex_000524_1_0",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_colossal_v4_ex_000524_1_1",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4size_colossal_v4_ex_000524_1_2",
+      "split": "test_heldout_size_colossal"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4size_gigantic_v4_ex_000041_0_0",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026175000000000005,
+      "example_id": "v4size_gigantic_v4_ex_000041_0_1",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4size_gigantic_v4_ex_000041_0_2",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_gigantic_v4_ex_000042_0_0",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_gigantic_v4_ex_000042_0_1",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_gigantic_v4_ex_000042_0_2",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_gigantic_v4_ex_000062_1_0",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4size_gigantic_v4_ex_000062_1_1",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4size_gigantic_v4_ex_000062_1_2",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026875000000000007,
+      "example_id": "v4size_gigantic_v4_ex_000185_0_0",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_gigantic_v4_ex_000185_0_1",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4size_gigantic_v4_ex_000185_0_2",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4size_gigantic_v4_ex_000188_1_0",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4size_gigantic_v4_ex_000188_1_1",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_gigantic_v4_ex_000188_1_2",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_gigantic_v4_ex_000290_1_0",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026375000000000005,
+      "example_id": "v4size_gigantic_v4_ex_000290_1_1",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026475000000000005,
+      "example_id": "v4size_gigantic_v4_ex_000290_1_2",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_gigantic_v4_ex_000338_0_0",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4size_gigantic_v4_ex_000338_0_1",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4size_gigantic_v4_ex_000338_0_2",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026875000000000007,
+      "example_id": "v4size_gigantic_v4_ex_000373_1_0",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_gigantic_v4_ex_000373_1_1",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4size_gigantic_v4_ex_000373_1_2",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4size_gigantic_v4_ex_000417_1_0",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026775,
+      "example_id": "v4size_gigantic_v4_ex_000417_1_1",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4size_gigantic_v4_ex_000417_1_2",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4size_gigantic_v4_ex_000450_0_0",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027975000000000005,
+      "example_id": "v4size_gigantic_v4_ex_000450_0_1",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027775000000000005,
+      "example_id": "v4size_gigantic_v4_ex_000450_0_2",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027075000000000003,
+      "example_id": "v4size_gigantic_v4_ex_000460_1_0",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027075000000000003,
+      "example_id": "v4size_gigantic_v4_ex_000460_1_1",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4size_gigantic_v4_ex_000460_1_2",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4size_gigantic_v4_ex_000462_0_0",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027075000000000003,
+      "example_id": "v4size_gigantic_v4_ex_000462_0_1",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4size_gigantic_v4_ex_000462_0_2",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4size_gigantic_v4_ex_000517_0_0",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027075000000000003,
+      "example_id": "v4size_gigantic_v4_ex_000517_0_1",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027275000000000003,
+      "example_id": "v4size_gigantic_v4_ex_000517_0_2",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4size_gigantic_v4_ex_000524_1_0",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4size_gigantic_v4_ex_000524_1_1",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4size_gigantic_v4_ex_000524_1_2",
+      "split": "test_heldout_size_gigantic"
+    },
+    {
+      "cost": 0.0027575000000000004,
+      "example_id": "v4speed_briskly_v4_ex_000030_0_0",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4speed_briskly_v4_ex_000030_0_1",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027675000000000004,
+      "example_id": "v4speed_briskly_v4_ex_000030_0_2",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027575000000000004,
+      "example_id": "v4speed_briskly_v4_ex_000046_0_0",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027675000000000004,
+      "example_id": "v4speed_briskly_v4_ex_000046_0_1",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0026975000000000002,
+      "example_id": "v4speed_briskly_v4_ex_000046_0_2",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4speed_briskly_v4_ex_000069_0_0",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027575000000000004,
+      "example_id": "v4speed_briskly_v4_ex_000069_0_1",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027675000000000004,
+      "example_id": "v4speed_briskly_v4_ex_000069_0_2",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027575000000000004,
+      "example_id": "v4speed_briskly_v4_ex_000080_1_0",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4speed_briskly_v4_ex_000080_1_1",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027675000000000004,
+      "example_id": "v4speed_briskly_v4_ex_000080_1_2",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4speed_briskly_v4_ex_000173_0_0",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4speed_briskly_v4_ex_000173_0_1",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027675000000000004,
+      "example_id": "v4speed_briskly_v4_ex_000173_0_2",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027575000000000004,
+      "example_id": "v4speed_briskly_v4_ex_000223_1_0",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0026575000000000006,
+      "example_id": "v4speed_briskly_v4_ex_000223_1_1",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027675000000000004,
+      "example_id": "v4speed_briskly_v4_ex_000223_1_2",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027575000000000004,
+      "example_id": "v4speed_briskly_v4_ex_000228_0_0",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027275000000000003,
+      "example_id": "v4speed_briskly_v4_ex_000228_0_1",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027075000000000003,
+      "example_id": "v4speed_briskly_v4_ex_000228_0_2",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4speed_briskly_v4_ex_000240_0_0",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0026575000000000006,
+      "example_id": "v4speed_briskly_v4_ex_000240_0_1",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4speed_briskly_v4_ex_000240_0_2",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027675000000000004,
+      "example_id": "v4speed_briskly_v4_ex_000315_0_0",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027275000000000003,
+      "example_id": "v4speed_briskly_v4_ex_000315_0_1",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027475000000000004,
+      "example_id": "v4speed_briskly_v4_ex_000315_0_2",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027575000000000004,
+      "example_id": "v4speed_briskly_v4_ex_000331_1_0",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0028175000000000006,
+      "example_id": "v4speed_briskly_v4_ex_000331_1_1",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027475000000000004,
+      "example_id": "v4speed_briskly_v4_ex_000331_1_2",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4speed_briskly_v4_ex_000341_1_0",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027575000000000004,
+      "example_id": "v4speed_briskly_v4_ex_000341_1_1",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027575000000000004,
+      "example_id": "v4speed_briskly_v4_ex_000341_1_2",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4speed_briskly_v4_ex_000349_1_0",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4speed_briskly_v4_ex_000349_1_1",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027575000000000004,
+      "example_id": "v4speed_briskly_v4_ex_000349_1_2",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4speed_briskly_v4_ex_000525_1_0",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4speed_briskly_v4_ex_000525_1_1",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4speed_briskly_v4_ex_000525_1_2",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4speed_briskly_v4_ex_000528_0_0",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0026575000000000006,
+      "example_id": "v4speed_briskly_v4_ex_000528_0_1",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4speed_briskly_v4_ex_000528_0_2",
+      "split": "test_heldout_speed_briskly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000030_1_0",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000030_1_1",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000030_1_2",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000046_1_0",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000046_1_1",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000046_1_2",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000069_1_0",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027475000000000004,
+      "example_id": "v4speed_sluggishly_v4_ex_000069_1_1",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000069_1_2",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000080_0_0",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027375000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000080_0_1",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000080_0_2",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000173_1_0",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027475000000000004,
+      "example_id": "v4speed_sluggishly_v4_ex_000173_1_1",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000173_1_2",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000223_0_0",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027475000000000004,
+      "example_id": "v4speed_sluggishly_v4_ex_000223_0_1",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000223_0_2",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000228_1_0",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027475000000000004,
+      "example_id": "v4speed_sluggishly_v4_ex_000228_1_1",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000228_1_2",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000240_1_0",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000240_1_1",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000240_1_2",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000315_1_0",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000315_1_1",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000315_1_2",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000331_0_0",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027575000000000004,
+      "example_id": "v4speed_sluggishly_v4_ex_000331_0_1",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000331_0_2",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000341_0_0",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000341_0_1",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000341_0_2",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0026775,
+      "example_id": "v4speed_sluggishly_v4_ex_000349_0_0",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000349_0_1",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000349_0_2",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000525_0_0",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000525_0_1",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0026775,
+      "example_id": "v4speed_sluggishly_v4_ex_000525_0_2",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000528_1_0",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027475000000000004,
+      "example_id": "v4speed_sluggishly_v4_ex_000528_1_1",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0027175000000000003,
+      "example_id": "v4speed_sluggishly_v4_ex_000528_1_2",
+      "split": "test_heldout_speed_sluggishly"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4speed_speedily_v4_ex_000030_0_0",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026875000000000007,
+      "example_id": "v4speed_speedily_v4_ex_000030_0_1",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026475000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000030_0_2",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026175000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000046_0_0",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026375000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000046_0_1",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026175000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000046_0_2",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026375000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000069_0_0",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0027275000000000003,
+      "example_id": "v4speed_speedily_v4_ex_000069_0_1",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026175000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000069_0_2",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026375000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000080_1_0",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026275000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000080_1_1",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026175000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000080_1_2",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026775,
+      "example_id": "v4speed_speedily_v4_ex_000173_0_0",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026575000000000006,
+      "example_id": "v4speed_speedily_v4_ex_000173_0_1",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026775,
+      "example_id": "v4speed_speedily_v4_ex_000173_0_2",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4speed_speedily_v4_ex_000223_1_0",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026275000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000223_1_1",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026375000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000223_1_2",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026375000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000228_0_0",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026475000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000228_0_1",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026175000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000228_0_2",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026375000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000240_0_0",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026575000000000006,
+      "example_id": "v4speed_speedily_v4_ex_000240_0_1",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026775,
+      "example_id": "v4speed_speedily_v4_ex_000240_0_2",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026375000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000315_0_0",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026275000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000315_0_1",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026775,
+      "example_id": "v4speed_speedily_v4_ex_000315_0_2",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026375000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000331_1_0",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0027775000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000331_1_1",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026175000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000331_1_2",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026775,
+      "example_id": "v4speed_speedily_v4_ex_000341_1_0",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026575000000000006,
+      "example_id": "v4speed_speedily_v4_ex_000341_1_1",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026275000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000341_1_2",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026675000000000006,
+      "example_id": "v4speed_speedily_v4_ex_000349_1_0",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026275000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000349_1_1",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026775,
+      "example_id": "v4speed_speedily_v4_ex_000349_1_2",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026375000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000525_1_0",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026575000000000006,
+      "example_id": "v4speed_speedily_v4_ex_000525_1_1",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026375000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000525_1_2",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026375000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000528_0_0",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026475000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000528_0_1",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026275000000000005,
+      "example_id": "v4speed_speedily_v4_ex_000528_0_2",
+      "split": "test_heldout_speed_speedily"
+    },
+    {
+      "cost": 0.0026650000000000003,
+      "example_id": "v4speed_gradually_v4_ex_000030_1_0",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.0026650000000000003,
+      "example_id": "v4speed_gradually_v4_ex_000030_1_1",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.0026650000000000003,
+      "example_id": "v4speed_gradually_v4_ex_000030_1_2",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.0026650000000000003,
+      "example_id": "v4speed_gradually_v4_ex_000046_1_0",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002735,
+      "example_id": "v4speed_gradually_v4_ex_000046_1_1",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002725,
+      "example_id": "v4speed_gradually_v4_ex_000046_1_2",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.0026650000000000003,
+      "example_id": "v4speed_gradually_v4_ex_000069_1_0",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002725,
+      "example_id": "v4speed_gradually_v4_ex_000069_1_1",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002725,
+      "example_id": "v4speed_gradually_v4_ex_000069_1_2",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002715,
+      "example_id": "v4speed_gradually_v4_ex_000080_0_0",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002725,
+      "example_id": "v4speed_gradually_v4_ex_000080_0_1",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002765,
+      "example_id": "v4speed_gradually_v4_ex_000080_0_2",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.0026650000000000003,
+      "example_id": "v4speed_gradually_v4_ex_000173_1_0",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.0026650000000000003,
+      "example_id": "v4speed_gradually_v4_ex_000173_1_1",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.0026650000000000003,
+      "example_id": "v4speed_gradually_v4_ex_000173_1_2",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002715,
+      "example_id": "v4speed_gradually_v4_ex_000223_0_0",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.0026650000000000003,
+      "example_id": "v4speed_gradually_v4_ex_000223_0_1",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.0026650000000000003,
+      "example_id": "v4speed_gradually_v4_ex_000223_0_2",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002715,
+      "example_id": "v4speed_gradually_v4_ex_000228_1_0",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.0026650000000000003,
+      "example_id": "v4speed_gradually_v4_ex_000228_1_1",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.0026650000000000003,
+      "example_id": "v4speed_gradually_v4_ex_000228_1_2",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.0026650000000000003,
+      "example_id": "v4speed_gradually_v4_ex_000240_1_0",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.0026650000000000003,
+      "example_id": "v4speed_gradually_v4_ex_000240_1_1",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002765,
+      "example_id": "v4speed_gradually_v4_ex_000240_1_2",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002765,
+      "example_id": "v4speed_gradually_v4_ex_000315_1_0",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002715,
+      "example_id": "v4speed_gradually_v4_ex_000315_1_1",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002755,
+      "example_id": "v4speed_gradually_v4_ex_000315_1_2",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002805,
+      "example_id": "v4speed_gradually_v4_ex_000331_0_0",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002725,
+      "example_id": "v4speed_gradually_v4_ex_000331_0_1",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002805,
+      "example_id": "v4speed_gradually_v4_ex_000331_0_2",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002695,
+      "example_id": "v4speed_gradually_v4_ex_000341_0_0",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002725,
+      "example_id": "v4speed_gradually_v4_ex_000341_0_1",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002735,
+      "example_id": "v4speed_gradually_v4_ex_000341_0_2",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.0026650000000000003,
+      "example_id": "v4speed_gradually_v4_ex_000349_0_0",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002725,
+      "example_id": "v4speed_gradually_v4_ex_000349_0_1",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002735,
+      "example_id": "v4speed_gradually_v4_ex_000349_0_2",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002715,
+      "example_id": "v4speed_gradually_v4_ex_000525_0_0",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002725,
+      "example_id": "v4speed_gradually_v4_ex_000525_0_1",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.002755,
+      "example_id": "v4speed_gradually_v4_ex_000525_0_2",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.0026650000000000003,
+      "example_id": "v4speed_gradually_v4_ex_000528_1_0",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.0026650000000000003,
+      "example_id": "v4speed_gradually_v4_ex_000528_1_1",
+      "split": "test_heldout_speed_gradually"
+    },
+    {
+      "cost": 0.0026650000000000003,
+      "example_id": "v4speed_gradually_v4_ex_000528_1_2",
+      "split": "test_heldout_speed_gradually"
+    }
+  ],
+  "total_cost_usd": 1.2099500000000014
+}

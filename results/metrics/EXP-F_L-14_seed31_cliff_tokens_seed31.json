@@ -1,0 +1,158 @@
+{
+  "cell": "L-L",
+  "checkpoint": "experiments/EXP-F/L-14/seed31/lib_v0_vitL14_seed31_best.pt",
+  "class_aggregates": {
+    "motion_above": {
+      "accuracy_mean": 0.9464285714285714,
+      "accuracy_std": 0.01785714285714285,
+      "cos_to_train_mean": 0.9559168803177825,
+      "n_rows_total": 56,
+      "tokens": [
+        "shift",
+        "convey"
+      ]
+    },
+    "motion_below": {
+      "accuracy_mean": 0.8928571428571429,
+      "accuracy_std": 0.0,
+      "cos_to_train_mean": 0.909961002983249,
+      "n_rows_total": 56,
+      "tokens": [
+        "scoot",
+        "transit"
+      ]
+    },
+    "size_BIG": {
+      "accuracy_mean": 0.9285714285714286,
+      "accuracy_std": 0.0,
+      "cos_to_train_mean": 0.9376197379293788,
+      "n_rows_total": 84,
+      "tokens": [
+        "colossal",
+        "gigantic"
+      ]
+    },
+    "size_SMALL": {
+      "accuracy_mean": 0.9166666666666667,
+      "accuracy_std": 0.011904761904761918,
+      "cos_to_train_mean": 0.935220208735855,
+      "n_rows_total": 84,
+      "tokens": [
+        "miniature",
+        "petite"
+      ]
+    },
+    "speed_FAST": {
+      "accuracy_mean": 0.3333333333333333,
+      "accuracy_std": 0.0,
+      "cos_to_train_mean": 0.9300088854665699,
+      "n_rows_total": 84,
+      "tokens": [
+        "briskly",
+        "speedily"
+      ]
+    },
+    "speed_SLOW": {
+      "accuracy_mean": 1.0,
+      "accuracy_std": 0.0,
+      "cos_to_train_mean": 0.9208548557700751,
+      "n_rows_total": 84,
+      "tokens": [
+        "sluggishly",
+        "gradually"
+      ]
+    }
+  },
+  "cliff_mean_accuracy": 0.8363095238095238,
+  "elapsed_sec": 45.48788046836853,
+  "n_cliff_rows_total": 448,
+  "patch_npz": "/path/to/project/outputs/auto/v4_new_axes_features_vitL14_patches.npz",
+  "per_token": {
+    "briskly": {
+      "accuracy": 0.3333333333333333,
+      "axis": "speed",
+      "correct": 14,
+      "cos_to_train": 0.9368822880385677,
+      "n_rows": 42
+    },
+    "colossal": {
+      "accuracy": 0.9285714285714286,
+      "axis": "size",
+      "correct": 39,
+      "cos_to_train": 0.9292191673292742,
+      "n_rows": 42
+    },
+    "convey": {
+      "accuracy": 0.9642857142857143,
+      "axis": "motion_sequence",
+      "correct": 27,
+      "cos_to_train": 0.952071356590383,
+      "n_rows": 28
+    },
+    "gigantic": {
+      "accuracy": 0.9285714285714286,
+      "axis": "size",
+      "correct": 39,
+      "cos_to_train": 0.9460203085294834,
+      "n_rows": 42
+    },
+    "gradually": {
+      "accuracy": 1.0,
+      "axis": "speed",
+      "correct": 42,
+      "cos_to_train": 0.9340650989665445,
+      "n_rows": 42
+    },
+    "miniature": {
+      "accuracy": 0.9285714285714286,
+      "axis": "size",
+      "correct": 39,
+      "cos_to_train": 0.9347019969046546,
+      "n_rows": 42
+    },
+    "petite": {
+      "accuracy": 0.9047619047619048,
+      "axis": "size",
+      "correct": 38,
+      "cos_to_train": 0.9357384205670555,
+      "n_rows": 42
+    },
+    "scoot": {
+      "accuracy": 0.8928571428571429,
+      "axis": "motion_sequence",
+      "correct": 25,
+      "cos_to_train": 0.9087693024447884,
+      "n_rows": 28
+    },
+    "shift": {
+      "accuracy": 0.9285714285714286,
+      "axis": "motion_sequence",
+      "correct": 26,
+      "cos_to_train": 0.9597624040451821,
+      "n_rows": 28
+    },
+    "sluggishly": {
+      "accuracy": 1.0,
+      "axis": "speed",
+      "correct": 42,
+      "cos_to_train": 0.9076446125736057,
+      "n_rows": 42
+    },
+    "speedily": {
+      "accuracy": 0.3333333333333333,
+      "axis": "speed",
+      "correct": 14,
+      "cos_to_train": 0.9231354828945721,
+      "n_rows": 42
+    },
+    "transit": {
+      "accuracy": 0.8928571428571429,
+      "axis": "motion_sequence",
+      "correct": 25,
+      "cos_to_train": 0.9111527035217095,
+      "n_rows": 28
+    }
+  },
+  "seed": 31,
+  "text_encoder": "ViT-L-14"
+}

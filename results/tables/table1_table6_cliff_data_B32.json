@@ -1,0 +1,142 @@
+{
+  "cliff_data": {
+    "motion_sequence": {
+      "transit": {
+        "cos": 0.9153,
+        "seeds_accuracy": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "mean": 0.5,
+        "std": 0.0
+      },
+      "scoot": {
+        "cos": 0.9266,
+        "seeds_accuracy": [
+          0.6785714285714286,
+          0.6071428571428571,
+          0.75
+        ],
+        "mean": 0.679,
+        "std": 0.0583
+      },
+      "convey": {
+        "cos": 0.9378,
+        "seeds_accuracy": [
+          0.9285714285714286,
+          0.9285714285714286,
+          0.9285714285714286
+        ],
+        "mean": 0.929,
+        "std": 0.0
+      },
+      "shift": {
+        "cos": 0.9681,
+        "seeds_accuracy": [
+          0.9285714285714286,
+          0.9285714285714286,
+          0.8928571428571429
+        ],
+        "mean": 0.917,
+        "std": 0.0168
+      }
+    },
+    "size": {
+      "fetch": {
+        "cos": 0.937,
+        "seeds_accuracy": [
+          0.9285714285714286,
+          0.9285714285714286,
+          0.9285714285714286
+        ],
+        "mean": 0.929,
+        "std": 0.0
+      },
+      "retrieve": {
+        "cos": 0.9361,
+        "seeds_accuracy": [
+          0.9285714285714286,
+          0.9285714285714286,
+          0.9285714285714286
+        ],
+        "mean": 0.929,
+        "std": 0.0
+      },
+      "secure": {
+        "cos": 0.9486,
+        "seeds_accuracy": [
+          0.9285714285714286,
+          0.9285714285714286,
+          0.9285714285714286
+        ],
+        "mean": 0.929,
+        "std": 0.0
+      }
+    },
+    "speed": {
+      "advance": {
+        "cos": 0.956,
+        "seeds_accuracy": [
+          0.9642857142857143,
+          1.0,
+          1.0
+        ],
+        "mean": 0.988,
+        "std": 0.0168
+      },
+      "translate": {
+        "cos": 0.9263,
+        "seeds_accuracy": [
+          0.9642857142857143,
+          0.8571428571428571,
+          1.0
+        ],
+        "mean": 0.94,
+        "std": 0.0607
+      },
+      "shift": {
+        "cos": 0.9566,
+        "seeds_accuracy": [
+          0.9642857142857143,
+          1.0,
+          1.0
+        ],
+        "mean": 0.988,
+        "std": 0.0168
+      }
+    }
+  },
+  "substitution_recovery_motion_sequence": {
+    "transit": {
+      "normal_mean": 0.5,
+      "substitution_mean": 0.893,
+      "recovery_abs": 0.393
+    },
+    "scoot": {
+      "normal_mean": 0.679,
+      "substitution_mean": 0.917,
+      "recovery_abs": 0.238
+    },
+    "convey": {
+      "normal_mean": 0.929,
+      "substitution_mean": 0.929,
+      "recovery_abs": 0.0
+    },
+    "shift": {
+      "normal_mean": 0.917,
+      "substitution_mean": 0.929,
+      "recovery_abs": 0.012
+    }
+  },
+  "correlation": {
+    "pearson_r_n12_motion_sequence": 0.8081,
+    "pearson_p_n12": 0.00147,
+    "spearman_rho_n12_motion_sequence": 0.8798,
+    "spearman_p_n12": 0.000161
+  },
+  "architectures_tested": [
+    "ViT-B-32"
+  ],
+  "date": "2026-05-19"
+}

@@ -1,0 +1,281 @@
+{
+  "rule": "Per-token B/32 outcome classified by accuracy: cliff_fail (mean \u2264 0.50), ceiling_pass (mean \u2265 0.75), borderline otherwise. Expected outcome by class: BIG/SLOW ceiling_pass, SMALL/FAST cliff_fail.",
+  "thresholds": {
+    "cliff_fail_max": 0.5,
+    "ceiling_pass_min": 0.75
+  },
+  "per_token": [
+    {
+      "source": "paper",
+      "class": "BIG",
+      "token": "colossal",
+      "b32_mean": 0.9226,
+      "l14_mean": 0.8661,
+      "b32_outcome": "ceiling_pass",
+      "l14_outcome": "ceiling_pass",
+      "expected": "ceiling_pass",
+      "agrees_expected": true
+    },
+    {
+      "source": "paper",
+      "class": "BIG",
+      "token": "gigantic",
+      "b32_mean": 0.9286,
+      "l14_mean": 0.8899,
+      "b32_outcome": "ceiling_pass",
+      "l14_outcome": "ceiling_pass",
+      "expected": "ceiling_pass",
+      "agrees_expected": true
+    },
+    {
+      "source": "new",
+      "class": "BIG",
+      "token": "enormous",
+      "b32_mean": 0.9226,
+      "l14_mean": 0.878,
+      "b32_outcome": "ceiling_pass",
+      "l14_outcome": "ceiling_pass",
+      "expected": "ceiling_pass",
+      "agrees_expected": true
+    },
+    {
+      "source": "new",
+      "class": "BIG",
+      "token": "vast",
+      "b32_mean": 0.9226,
+      "l14_mean": 0.8452,
+      "b32_outcome": "ceiling_pass",
+      "l14_outcome": "ceiling_pass",
+      "expected": "ceiling_pass",
+      "agrees_expected": true
+    },
+    {
+      "source": "paper",
+      "class": "SMALL",
+      "token": "miniature",
+      "b32_mean": 0.5238,
+      "l14_mean": 0.878,
+      "b32_outcome": "borderline",
+      "l14_outcome": "ceiling_pass",
+      "expected": "cliff_fail",
+      "agrees_expected": false
+    },
+    {
+      "source": "paper",
+      "class": "SMALL",
+      "token": "petite",
+      "b32_mean": 0.5625,
+      "l14_mean": 0.8423,
+      "b32_outcome": "borderline",
+      "l14_outcome": "ceiling_pass",
+      "expected": "cliff_fail",
+      "agrees_expected": false
+    },
+    {
+      "source": "new",
+      "class": "SMALL",
+      "token": "tiny",
+      "b32_mean": 0.7083,
+      "l14_mean": 0.9018,
+      "b32_outcome": "borderline",
+      "l14_outcome": "ceiling_pass",
+      "expected": "cliff_fail",
+      "agrees_expected": false
+    },
+    {
+      "source": "new",
+      "class": "SMALL",
+      "token": "minute",
+      "b32_mean": 0.1458,
+      "l14_mean": 0.128,
+      "b32_outcome": "cliff_fail",
+      "l14_outcome": "cliff_fail",
+      "expected": "cliff_fail",
+      "agrees_expected": true
+    },
+    {
+      "source": "paper",
+      "class": "FAST",
+      "token": "briskly",
+      "b32_mean": 0.0298,
+      "l14_mean": 0.3155,
+      "b32_outcome": "cliff_fail",
+      "l14_outcome": "cliff_fail",
+      "expected": "cliff_fail",
+      "agrees_expected": true
+    },
+    {
+      "source": "paper",
+      "class": "FAST",
+      "token": "speedily",
+      "b32_mean": 0.1548,
+      "l14_mean": 0.3512,
+      "b32_outcome": "cliff_fail",
+      "l14_outcome": "cliff_fail",
+      "expected": "cliff_fail",
+      "agrees_expected": true
+    },
+    {
+      "source": "new",
+      "class": "FAST",
+      "token": "swiftly",
+      "b32_mean": 0.247,
+      "l14_mean": 0.5268,
+      "b32_outcome": "cliff_fail",
+      "l14_outcome": "borderline",
+      "expected": "cliff_fail",
+      "agrees_expected": true
+    },
+    {
+      "source": "new",
+      "class": "FAST",
+      "token": "hastily",
+      "b32_mean": 0.2024,
+      "l14_mean": 0.9881,
+      "b32_outcome": "cliff_fail",
+      "l14_outcome": "ceiling_pass",
+      "expected": "cliff_fail",
+      "agrees_expected": true
+    },
+    {
+      "source": "paper",
+      "class": "SLOW",
+      "token": "sluggishly",
+      "b32_mean": 0.9702,
+      "l14_mean": 0.994,
+      "b32_outcome": "ceiling_pass",
+      "l14_outcome": "ceiling_pass",
+      "expected": "ceiling_pass",
+      "agrees_expected": true
+    },
+    {
+      "source": "paper",
+      "class": "SLOW",
+      "token": "gradually",
+      "b32_mean": 0.6815,
+      "l14_mean": 1.0,
+      "b32_outcome": "borderline",
+      "l14_outcome": "ceiling_pass",
+      "expected": "ceiling_pass",
+      "agrees_expected": false
+    },
+    {
+      "source": "new",
+      "class": "SLOW",
+      "token": "leisurely",
+      "b32_mean": 0.5714,
+      "l14_mean": 0.6964,
+      "b32_outcome": "borderline",
+      "l14_outcome": "borderline",
+      "expected": "ceiling_pass",
+      "agrees_expected": false
+    },
+    {
+      "source": "new",
+      "class": "SLOW",
+      "token": "languidly",
+      "b32_mean": 0.9464,
+      "l14_mean": 0.6637,
+      "b32_outcome": "ceiling_pass",
+      "l14_outcome": "borderline",
+      "expected": "ceiling_pass",
+      "agrees_expected": true
+    }
+  ],
+  "class_counts": {
+    "BIG": {
+      "cliff_fail": 0,
+      "borderline": 0,
+      "ceiling_pass": 4,
+      "n_total": 4,
+      "n_agree": 4,
+      "n_disagree": 0
+    },
+    "SMALL": {
+      "cliff_fail": 1,
+      "borderline": 3,
+      "ceiling_pass": 0,
+      "n_total": 4,
+      "n_agree": 1,
+      "n_disagree": 3
+    },
+    "FAST": {
+      "cliff_fail": 4,
+      "borderline": 0,
+      "ceiling_pass": 0,
+      "n_total": 4,
+      "n_agree": 4,
+      "n_disagree": 0
+    },
+    "SLOW": {
+      "cliff_fail": 0,
+      "borderline": 2,
+      "ceiling_pass": 2,
+      "n_total": 4,
+      "n_agree": 2,
+      "n_disagree": 2
+    }
+  },
+  "surprises": [
+    {
+      "source": "paper",
+      "class": "SMALL",
+      "token": "miniature",
+      "b32_mean": 0.5238,
+      "l14_mean": 0.878,
+      "b32_outcome": "borderline",
+      "l14_outcome": "ceiling_pass",
+      "expected": "cliff_fail",
+      "agrees_expected": false,
+      "direction": "expected=cliff_fail, got=borderline"
+    },
+    {
+      "source": "paper",
+      "class": "SMALL",
+      "token": "petite",
+      "b32_mean": 0.5625,
+      "l14_mean": 0.8423,
+      "b32_outcome": "borderline",
+      "l14_outcome": "ceiling_pass",
+      "expected": "cliff_fail",
+      "agrees_expected": false,
+      "direction": "expected=cliff_fail, got=borderline"
+    },
+    {
+      "source": "new",
+      "class": "SMALL",
+      "token": "tiny",
+      "b32_mean": 0.7083,
+      "l14_mean": 0.9018,
+      "b32_outcome": "borderline",
+      "l14_outcome": "ceiling_pass",
+      "expected": "cliff_fail",
+      "agrees_expected": false,
+      "direction": "expected=cliff_fail, got=borderline"
+    },
+    {
+      "source": "paper",
+      "class": "SLOW",
+      "token": "gradually",
+      "b32_mean": 0.6815,
+      "l14_mean": 1.0,
+      "b32_outcome": "borderline",
+      "l14_outcome": "ceiling_pass",
+      "expected": "ceiling_pass",
+      "agrees_expected": false,
+      "direction": "expected=ceiling_pass, got=borderline"
+    },
+    {
+      "source": "new",
+      "class": "SLOW",
+      "token": "leisurely",
+      "b32_mean": 0.5714,
+      "l14_mean": 0.6964,
+      "b32_outcome": "borderline",
+      "l14_outcome": "borderline",
+      "expected": "ceiling_pass",
+      "agrees_expected": false,
+      "direction": "expected=ceiling_pass, got=borderline"
+    }
+  ]
+}

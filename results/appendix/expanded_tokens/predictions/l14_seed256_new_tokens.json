@@ -1,0 +1,118 @@
+{
+  "cell": "L-L",
+  "checkpoint": "/path/to/project/experiments/EXP-F/L-14/seed256/lib_v0_l14_efg_seed256_best.pt",
+  "class_aggregates": {
+    "size_BIG": {
+      "accuracy_mean": 0.8571428571428571,
+      "accuracy_std": 0.0,
+      "cos_to_train_mean": 0.9388486639541505,
+      "n_rows_total": 84,
+      "tokens": [
+        "enormous",
+        "vast"
+      ]
+    },
+    "size_SMALL": {
+      "accuracy_mean": 0.5,
+      "accuracy_std": 0.3571428571428571,
+      "cos_to_train_mean": 0.9360552218833074,
+      "n_rows_total": 84,
+      "tokens": [
+        "tiny",
+        "minute"
+      ]
+    },
+    "speed_FAST": {
+      "accuracy_mean": 0.7142857142857143,
+      "accuracy_std": 0.28571428571428575,
+      "cos_to_train_mean": 0.9411001457037296,
+      "n_rows_total": 84,
+      "tokens": [
+        "swiftly",
+        "hastily"
+      ]
+    },
+    "speed_SLOW": {
+      "accuracy_mean": 0.6666666666666666,
+      "accuracy_std": 0.0,
+      "cos_to_train_mean": 0.9285557651481098,
+      "n_rows_total": 84,
+      "tokens": [
+        "leisurely",
+        "languidly"
+      ]
+    }
+  },
+  "elapsed_sec": 45.32199430465698,
+  "n_rows_total": 336,
+  "new_token_mean_accuracy": 0.6845238095238095,
+  "patch_npz": "/path/to/project/outputs/auto/v4_new_axes_features_vitL14_patches.npz",
+  "per_token": {
+    "enormous": {
+      "accuracy": 0.8571428571428571,
+      "axis": "size",
+      "correct": 36,
+      "cos_to_train": 0.9466622047471381,
+      "n_rows": 42,
+      "sem_class": "BIG"
+    },
+    "hastily": {
+      "accuracy": 1.0,
+      "axis": "speed",
+      "correct": 42,
+      "cos_to_train": 0.9324240952807555,
+      "n_rows": 42,
+      "sem_class": "FAST"
+    },
+    "languidly": {
+      "accuracy": 0.6666666666666666,
+      "axis": "speed",
+      "correct": 28,
+      "cos_to_train": 0.9236790835847201,
+      "n_rows": 42,
+      "sem_class": "SLOW"
+    },
+    "leisurely": {
+      "accuracy": 0.6666666666666666,
+      "axis": "speed",
+      "correct": 28,
+      "cos_to_train": 0.9334324467114994,
+      "n_rows": 42,
+      "sem_class": "SLOW"
+    },
+    "minute": {
+      "accuracy": 0.14285714285714285,
+      "axis": "size",
+      "correct": 6,
+      "cos_to_train": 0.9238506418236493,
+      "n_rows": 42,
+      "sem_class": "SMALL"
+    },
+    "swiftly": {
+      "accuracy": 0.42857142857142855,
+      "axis": "speed",
+      "correct": 18,
+      "cos_to_train": 0.9497761961267036,
+      "n_rows": 42,
+      "sem_class": "FAST"
+    },
+    "tiny": {
+      "accuracy": 0.8571428571428571,
+      "axis": "size",
+      "correct": 36,
+      "cos_to_train": 0.9482598019429653,
+      "n_rows": 42,
+      "sem_class": "SMALL"
+    },
+    "vast": {
+      "accuracy": 0.8571428571428571,
+      "axis": "size",
+      "correct": 36,
+      "cos_to_train": 0.9310351231611629,
+      "n_rows": 42,
+      "sem_class": "BIG"
+    }
+  },
+  "seed": 256,
+  "text_encoder": "ViT-L-14"
+}

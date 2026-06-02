@@ -1,0 +1,199 @@
+{
+  "deterministic_state_based_labels": true,
+  "generator": "mujoco_scripted_cf_prefbench_v4_new_axes",
+  "motion_heldout_pairs": [
+    [
+      "up_then_down",
+      "down_then_up"
+    ],
+    [
+      "down_then_up",
+      "up_then_down"
+    ]
+  ],
+  "motion_train_pairs": [
+    [
+      "left_then_right",
+      "right_then_left"
+    ],
+    [
+      "right_then_left",
+      "left_then_right"
+    ]
+  ],
+  "new_axes": [
+    "size",
+    "motion_sequence",
+    "speed"
+  ],
+  "new_axis_examples": 3240,
+  "new_pairs": 540,
+  "not_metaworld": true,
+  "per_axis_total_count": {
+    "action": 1080,
+    "color": 1080,
+    "impossible_premise": 189,
+    "motion_sequence": 1080,
+    "object": 1080,
+    "size": 1080,
+    "spatial": 1080,
+    "speed": 1080
+  },
+  "per_split_axis_count": {
+    "test_hard_negatives": {
+      "action": 72,
+      "color": 72,
+      "impossible_premise": 27,
+      "motion_sequence": 72,
+      "object": 72,
+      "size": 72,
+      "spatial": 72,
+      "speed": 72
+    },
+    "test_heldout_camera": {
+      "action": 72,
+      "color": 72,
+      "impossible_premise": 27,
+      "motion_sequence": 72,
+      "object": 72,
+      "size": 72,
+      "spatial": 72,
+      "speed": 72
+    },
+    "test_heldout_color": {
+      "action": 84,
+      "color": 84,
+      "impossible_premise": 27,
+      "motion_sequence": 84,
+      "object": 84,
+      "size": 84,
+      "spatial": 84,
+      "speed": 84
+    },
+    "test_heldout_lexical": {
+      "action": 84,
+      "color": 84,
+      "impossible_premise": 27,
+      "motion_sequence": 84,
+      "object": 84,
+      "size": 84,
+      "spatial": 84,
+      "speed": 84
+    },
+    "test_heldout_spatial": {
+      "action": 84,
+      "color": 84,
+      "impossible_premise": 27,
+      "motion_sequence": 84,
+      "object": 84,
+      "size": 84,
+      "spatial": 84,
+      "speed": 84
+    },
+    "test_seen": {
+      "action": 72,
+      "color": 72,
+      "impossible_premise": 27,
+      "motion_sequence": 72,
+      "object": 72,
+      "size": 72,
+      "spatial": 72,
+      "speed": 72
+    },
+    "train": {
+      "action": 528,
+      "color": 528,
+      "motion_sequence": 528,
+      "object": 528,
+      "size": 528,
+      "spatial": 528,
+      "speed": 528
+    },
+    "val": {
+      "action": 84,
+      "color": 84,
+      "impossible_premise": 27,
+      "motion_sequence": 84,
+      "object": 84,
+      "size": 84,
+      "spatial": 84,
+      "speed": 84
+    }
+  },
+  "seed": 4242,
+  "size_heldout_pairs": [
+    [
+      "huge",
+      "tiny"
+    ],
+    [
+      "tiny",
+      "huge"
+    ]
+  ],
+  "size_train_pairs": [
+    [
+      "large",
+      "small"
+    ],
+    [
+      "big",
+      "small"
+    ],
+    [
+      "small",
+      "large"
+    ],
+    [
+      "small",
+      "big"
+    ]
+  ],
+  "speed_heldout_pairs": [
+    [
+      "rapidly",
+      "leisurely"
+    ],
+    [
+      "leisurely",
+      "rapidly"
+    ]
+  ],
+  "speed_train_pairs": [
+    [
+      "quickly",
+      "slowly"
+    ],
+    [
+      "slowly",
+      "quickly"
+    ]
+  ],
+  "splits": {
+    "test_hard_negatives": 531,
+    "test_heldout_camera": 531,
+    "test_heldout_color": 615,
+    "test_heldout_lexical": 615,
+    "test_heldout_spatial": 615,
+    "test_seen": 531,
+    "train": 3696,
+    "val": 615
+  },
+  "v3_axes": [
+    "color",
+    "object",
+    "action",
+    "spatial",
+    "impossible_premise"
+  ],
+  "v4_axes_total": [
+    "action",
+    "color",
+    "impossible_premise",
+    "motion_sequence",
+    "object",
+    "size",
+    "spatial",
+    "speed"
+  ]
+}

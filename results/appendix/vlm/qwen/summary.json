@@ -1,0 +1,93 @@
+{
+  "model": "qwen2-vl-2b",
+  "per_split": {
+    "test_heldout_lexical": {
+      "accuracy": 0.5,
+      "n": 42,
+      "per_verb": {
+        "convey": 0.4583333333333333,
+        "shift": 0.5555555555555556,
+        "transit": 0.5555555555555556
+      }
+    },
+    "test_heldout_lexical_scoot": {
+      "accuracy": 0.3333333333333333,
+      "n": 15,
+      "per_verb": {
+        "scoot": 0.3333333333333333
+      }
+    },
+    "test_heldout_size_colossal": {
+      "accuracy": 0.43902439024390244,
+      "n": 41,
+      "per_verb": {
+        "fetch": 0.42857142857142855,
+        "retrieve": 0.38461538461538464,
+        "secure": 0.5
+      }
+    },
+    "test_heldout_size_gigantic": {
+      "accuracy": 0.45,
+      "n": 40,
+      "per_verb": {
+        "fetch": 0.42857142857142855,
+        "retrieve": 0.42857142857142855,
+        "secure": 0.5
+      }
+    },
+    "test_heldout_size_miniature": {
+      "accuracy": 0.5384615384615384,
+      "n": 39,
+      "per_verb": {
+        "fetch": 0.5384615384615384,
+        "retrieve": 0.5714285714285714,
+        "secure": 0.5
+      }
+    },
+    "test_heldout_size_petite": {
+      "accuracy": 0.5128205128205128,
+      "n": 39,
+      "per_verb": {
+        "fetch": 0.5384615384615384,
+        "retrieve": 0.5714285714285714,
+        "secure": 0.4166666666666667
+      }
+    },
+    "test_heldout_speed_briskly": {
+      "accuracy": 0.3548387096774194,
+      "n": 31,
+      "per_verb": {
+        "advance": 0.35714285714285715,
+        "shift": 0.3,
+        "translate": 0.42857142857142855
+      }
+    },
+    "test_heldout_speed_gradually": {
+      "accuracy": 0.42857142857142855,
+      "n": 28,
+      "per_verb": {
+        "advance": 0.5,
+        "shift": 0.25,
+        "translate": 0.5
+      }
+    },
+    "test_heldout_speed_sluggishly": {
+      "accuracy": 0.4838709677419355,
+      "n": 31,
+      "per_verb": {
+        "advance": 0.5,
+        "shift": 0.5833333333333334,
+        "translate": 0.2
+      }
+    },
+    "test_heldout_speed_speedily": {
+      "accuracy": 0.5365853658536586,
+      "n": 41,
+      "per_verb": {
+        "advance": 0.42857142857142855,
+        "shift": 0.6153846153846154,
+        "translate": 0.5714285714285714
+      }
+    }
+  }
+}

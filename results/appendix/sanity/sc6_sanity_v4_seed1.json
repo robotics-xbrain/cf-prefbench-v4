@@ -1,0 +1,106 @@
+{
+  "normal": {
+    "motion_sequence": {
+      "accuracy": 0.75,
+      "per_verb": {
+        "convey": 0.8571428571428571,
+        "shift": 0.8571428571428571,
+        "transit": 0.5357142857142857
+      }
+    },
+    "size": {
+      "accuracy": 0.9285714285714286,
+      "per_verb": {
+        "fetch": 0.9285714285714286,
+        "retrieve": 0.9285714285714286,
+        "secure": 0.9285714285714286
+      }
+    },
+    "speed": {
+      "accuracy": 0.9285714285714286,
+      "per_verb": {
+        "advance": 0.9285714285714286,
+        "shift": 0.9285714285714286,
+        "translate": 0.9285714285714286
+      }
+    }
+  },
+  "shuffle_text": {
+    "motion_sequence": {
+      "accuracy": 0.4523809523809524,
+      "per_verb": {
+        "convey": 0.5357142857142857,
+        "shift": 0.4642857142857143,
+        "transit": 0.35714285714285715
+      }
+    },
+    "size": {
+      "accuracy": 0.5,
+      "per_verb": {
+        "fetch": 0.4642857142857143,
+        "retrieve": 0.6071428571428571,
+        "secure": 0.42857142857142855
+      }
+    },
+    "speed": {
+      "accuracy": 0.4166666666666667,
+      "per_verb": {
+        "advance": 0.42857142857142855,
+        "shift": 0.35714285714285715,
+        "translate": 0.4642857142857143
+      }
+    }
+  },
+  "substitution_with_train_verb": {
+    "motion_sequence": {
+      "accuracy": 0.8928571428571429,
+      "per_verb": {
+        "convey": 0.8928571428571429,
+        "shift": 0.8928571428571429,
+        "transit": 0.8928571428571429
+      }
+    },
+    "size": {
+      "accuracy": 0.8928571428571429,
+      "per_verb": {
+        "fetch": 0.8928571428571429,
+        "retrieve": 0.8928571428571429,
+        "secure": 0.8928571428571429
+      }
+    },
+    "speed": {
+      "accuracy": 0.9285714285714286,
+      "per_verb": {
+        "advance": 0.9285714285714286,
+        "shift": 0.9285714285714286,
+        "translate": 0.9285714285714286
+      }
+    }
+  },
+  "zero_text": {
+    "motion_sequence": {
+      "accuracy": 0.5,
+      "per_verb": {
+        "convey": 0.5,
+        "shift": 0.5,
+        "transit": 0.5
+      }
+    },
+    "size": {
+      "accuracy": 0.5,
+      "per_verb": {
+        "fetch": 0.5,
+        "retrieve": 0.5,
+        "secure": 0.5
+      }
+    },
+    "speed": {
+      "accuracy": 0.5,
+      "per_verb": {
+        "advance": 0.5,
+        "shift": 0.5,
+        "translate": 0.5
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "accuracy": 0.5967741935483871,
+  "backend": "qwen",
+  "cost_usd": 0.0,
+  "n": 62,
+  "n_correct": 37,
+  "n_motion_rows_total": 112
+}

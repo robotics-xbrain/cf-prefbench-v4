@@ -1,0 +1,38 @@
+{
+  "above_cliff_mean": 0.8214285714285714,
+  "arch": "bilinear",
+  "below_cliff_mean": 0.6607142857142857,
+  "checkpoint": "/path/to/project/experiments/EXP-D/bilinear/seed2024/ckpt_best.pt",
+  "cliff_mean_accuracy": 0.7410714285714286,
+  "cliff_present": false,
+  "cliff_present_gap_threshold": 0.2,
+  "elapsed_sec": 10.894906044006348,
+  "n_tokens_evaluated": 4,
+  "per_token": {
+    "convey": {
+      "accuracy": 0.7857142857142857,
+      "axis": "motion_sequence",
+      "correct": 22,
+      "n_rows": 28
+    },
+    "scoot": {
+      "accuracy": 0.8214285714285714,
+      "axis": "motion_sequence",
+      "correct": 23,
+      "n_rows": 28
+    },
+    "shift": {
+      "accuracy": 0.8571428571428571,
+      "axis": "motion_sequence",
+      "correct": 24,
+      "n_rows": 28
+    },
+    "transit": {
+      "accuracy": 0.5,
+      "axis": "motion_sequence",
+      "correct": 14,
+      "n_rows": 28
+    }
+  },
+  "seed": 2024
+}

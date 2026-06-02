@@ -1,0 +1,113 @@
+{
+  "rows": [
+    {
+      "class": "motion above-cliff",
+      "cos_b32": 0.938,
+      "lib_b32": 0.929,
+      "lib_l14": 0.929,
+      "n": 26,
+      "token": "convey",
+      "vlm_acc": 0.5
+    },
+    {
+      "class": "motion above-cliff",
+      "cos_b32": 0.968,
+      "lib_b32": 0.917,
+      "lib_l14": 0.905,
+      "n": 26,
+      "token": "shift",
+      "vlm_acc": 0.5769230769230769
+    },
+    {
+      "class": "motion below-cliff",
+      "cos_b32": 0.927,
+      "lib_b32": 0.679,
+      "lib_l14": 0.905,
+      "n": 25,
+      "token": "scoot",
+      "vlm_acc": 0.6
+    },
+    {
+      "class": "motion below-cliff",
+      "cos_b32": 0.915,
+      "lib_b32": 0.5,
+      "lib_l14": 0.917,
+      "n": 23,
+      "token": "transit",
+      "vlm_acc": 0.4782608695652174
+    },
+    {
+      "class": "size BIG",
+      "cos_b32": 0.898,
+      "lib_b32": 0.921,
+      "lib_l14": 0.81,
+      "n": 38,
+      "token": "colossal",
+      "vlm_acc": 0.8947368421052632
+    },
+    {
+      "class": "size BIG",
+      "cos_b32": 0.918,
+      "lib_b32": 0.929,
+      "lib_l14": 0.81,
+      "n": 36,
+      "token": "gigantic",
+      "vlm_acc": 0.8888888888888888
+    },
+    {
+      "class": "size SMALL",
+      "cos_b32": 0.918,
+      "lib_b32": 0.397,
+      "lib_l14": 0.817,
+      "n": 42,
+      "token": "miniature",
+      "vlm_acc": 0.7857142857142857
+    },
+    {
+      "class": "size SMALL",
+      "cos_b32": 0.917,
+      "lib_b32": 0.492,
+      "lib_l14": 0.77,
+      "n": 41,
+      "token": "petite",
+      "vlm_acc": 0.8292682926829268
+    },
+    {
+      "class": "speed FAST",
+      "cos_b32": 0.937,
+      "lib_b32": 0.048,
+      "lib_l14": 0.317,
+      "n": 42,
+      "token": "briskly",
+      "vlm_acc": 0.6428571428571429
+    },
+    {
+      "class": "speed FAST",
+      "cos_b32": 0.942,
+      "lib_b32": 0.183,
+      "lib_l14": 0.46,
+      "n": 42,
+      "token": "speedily",
+      "vlm_acc": 0.7142857142857143
+    },
+    {
+      "class": "speed SLOW",
+      "cos_b32": 0.938,
+      "lib_b32": 0.698,
+      "lib_l14": 1.0,
+      "n": 42,
+      "token": "gradually",
+      "vlm_acc": 0.5714285714285714
+    },
+    {
+      "class": "speed SLOW",
+      "cos_b32": 0.932,
+      "lib_b32": 0.96,
+      "lib_l14": 0.992,
+      "n": 42,
+      "token": "sluggishly",
+      "vlm_acc": 0.5238095238095238
+    }
+  ],
+  "vlm": "gpt-4o-2024-11-20"
+}

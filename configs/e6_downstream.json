@@ -1,0 +1,8 @@
+{
+  "label_sources": ["scripted", "vlp_if_available", "base_pref", "cpl_pref"],
+  "same_offline_buffer": true,
+  "same_policy_learner": true,
+  "supporting_evidence_only": true,
+  "requires_e1_e2_e4_gates_pass": true
+}
+

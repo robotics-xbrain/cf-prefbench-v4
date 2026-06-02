@@ -1,0 +1,6 @@
+{
+  "models": ["clip", "vlp_if_available", "base_pref", "cpl_pref"],
+  "metrics": ["UCE", "mean_confidence", "forced_choice_bias", "tie_rate"],
+  "requires_impossible_premise_axis": true
+}
+

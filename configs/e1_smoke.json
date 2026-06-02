@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "baselines": [
+    "language_only",
+    "shuffled_video",
+    "clip_score",
+    "base_pref"
+  ],
+  "gate": {
+    "requires_real_data": true,
+    "requires_e0_leakage_pass": true
+  }
+}
+

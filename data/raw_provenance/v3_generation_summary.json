@@ -1,0 +1,47 @@
+{
+  "axes": {
+    "action": 1080,
+    "color": 1080,
+    "impossible_premise": 189,
+    "object": 1080,
+    "spatial": 1080
+  },
+  "deterministic_state_based_labels": true,
+  "generator": "mujoco_scripted_cf_prefbench_v3_anti_shortcut",
+  "heldout_camera": "tilted",
+  "heldout_color_tuples": [
+    [
+      "magenta",
+      "cyan"
+    ],
+    [
+      "cyan",
+      "magenta"
+    ]
+  ],
+  "heldout_spatial_tuples": [
+    [
+      "north",
+      "south"
+    ],
+    [
+      "south",
+      "north"
+    ]
+  ],
+  "n_examples": 4509,
+  "n_pairs": 783,
+  "not_metaworld": true,
+  "notes": "v3 anti-shortcut: balanced label per template, paraphrase-pool held-out lexical, color-binding held-out, opaque video filenames, label_rule and scores removed from metadata.",
+  "seed": 6363,
+  "splits": {
+    "test_hard_negatives": 315,
+    "test_heldout_camera": 315,
+    "test_heldout_color": 363,
+    "test_heldout_lexical": 363,
+    "test_heldout_spatial": 363,
+    "test_seen": 315,
+    "train": 2112,
+    "val": 363
+  }
+}
