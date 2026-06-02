@@ -98,7 +98,7 @@
       "detail": ""
     },
     {
-      "check": "hygiene:no vcs/cache/logs",
+      "check": "hygiene:no nested vcs/cache/logs",
       "ok": true,
       "detail": "clean"
     },

@@ -32,14 +32,41 @@ chk("docs:index+map+classification",
     all(os.path.exists(os.path.join(ROOT, "docs", x)) for x in
         ["PAPER_ITEM_INDEX.md", "PAPER_EVIDENCE_MAP.md", "REPO_FILE_CLASSIFICATION.md"]), "")
 
-# hygiene: no .git / __pycache__ / logs / wandb
+# hygiene: allow top-level .git in a normal git clone, but reject nested VCS/cache/log artifacts.
+# Reviewer workflow usually runs verify_artifact.sh from a cloned repository, where ROOT/.git is expected.
+from pathlib import Path as _Path
+
+ROOT_PATH = _Path(ROOT)
 bad = []
-for pat in [".git", "__pycache__", "wandb", "runs"]:
-    if glob.glob(os.path.join(ROOT, "**", pat), recursive=True): bad.append(pat)
-if glob.glob(os.path.join(ROOT, "**", "*.pyc"), recursive=True): bad.append("*.pyc")
-logdirs = [d for d in glob.glob(os.path.join(ROOT, "**", "logs"), recursive=True) if os.path.isdir(d)]
-if logdirs: bad.append("logs/")
-chk("hygiene:no vcs/cache/logs", not bad, f"offenders={bad}" if bad else "clean")
+ignored_top_level = {".git", ".venv", "venv", "env", ".tox", ".pytest_cache", ".mypy_cache"}
+
+def is_ignored(path):
+    try:
+        rel = path.relative_to(ROOT_PATH)
+    except ValueError:
+        return False
+    parts = rel.parts
+    return bool(parts and parts[0] in ignored_top_level)
+
+# Top-level .git is allowed; nested .git directories are not.
+for x in ROOT_PATH.rglob(".git"):
+    if is_ignored(x):
+        continue
+    bad.append(str(x.relative_to(ROOT_PATH)))
+
+for pat in ["__pycache__", "wandb", "runs", "logs", "prompts", "review-stage", "research-wiki"]:
+    for x in ROOT_PATH.rglob(pat):
+        if is_ignored(x):
+            continue
+        bad.append(str(x.relative_to(ROOT_PATH)))
+
+for pat in ["*.pyc", "texput.log"]:
+    for x in ROOT_PATH.rglob(pat):
+        if is_ignored(x):
+            continue
+        bad.append(str(x.relative_to(ROOT_PATH)))
+
+chk("hygiene:no nested vcs/cache/logs", not bad, f"offenders={bad}" if bad else "clean")
 
 # identity scan ran
 chk("identity_scan_present", os.path.exists(os.path.join(ROOT, "docs/IDENTITY_LEAK_SCAN.md")), "")
